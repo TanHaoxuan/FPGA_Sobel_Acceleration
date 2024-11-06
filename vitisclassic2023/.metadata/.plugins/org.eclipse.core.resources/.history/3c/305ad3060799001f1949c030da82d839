@@ -1,0 +1,210 @@
+#include "xparameters.h"
+#include "xuartps.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include <stdbool.h>
+#include <unistd.h>
+#include "xtmrctr.h"
+
+/************************** Constant Definitions *****************************/
+
+/*
+ * The following constants map to the XPAR parameters created in the
+ * xparameters.h file. They are defined here such that a user can easily
+ * change all the needed parameters in one place.
+ */
+#ifndef SDT
+#define UART_DEVICE_ID          XPAR_XUARTPS_0_DEVICE_ID
+#else
+#define	XUARTPS_BASEADDRESS		XPAR_XUARTPS_0_BASEADDR
+#endif
+
+#ifndef SDT
+#define TMRCTR_DEVICE_ID	XPAR_TMRCTR_0_DEVICE_ID
+#else
+#define XTMRCTR_BASEADDRESS	XPAR_XTMRCTR_0_BASEADDR
+#endif
+
+#define MAX_IMG_WIDTH 1024
+#define MAX_IMG_HEIGHT 768
+
+/************************** Function Prototypes ******************************/
+int InitializeUART(u16 DeviceId);
+void readImageFromUART(unsigned char img[MAX_IMG_HEIGHT][MAX_IMG_WIDTH], unsigned *height, unsigned *width);
+void writeImageToUART(unsigned char img[MAX_IMG_HEIGHT][MAX_IMG_WIDTH], unsigned height, unsigned width);
+void applySobelFilter(unsigned char input[MAX_IMG_HEIGHT][MAX_IMG_WIDTH], unsigned char output[MAX_IMG_HEIGHT][MAX_IMG_WIDTH], unsigned height, unsigned width);
+
+#define TIMER_COUNTER_0	 0
+int InitializeTimer(u16 DeviceId);
+void StartTimer();
+u32 StopTimer();
+/************************** Variable Definitions *****************************/
+
+XUartPs Uart_Ps;		/* The instance of the UART Driver */
+XTmrCtr TimerInstance;
+
+
+int main() {
+    unsigned char image[MAX_IMG_HEIGHT][MAX_IMG_WIDTH];
+    unsigned char output_image[MAX_IMG_HEIGHT][MAX_IMG_WIDTH];
+    unsigned height, width;
+
+
+    // Initialize UART
+    int Status;
+	#ifndef SDT
+		Status = InitializeUART(UART_DEVICE_ID);
+	#else
+		Status = InitializeUART(XUARTPS_BASEADDRESS);
+	#endif
+    if (Status != XST_SUCCESS) {
+        xil_printf("UART Initialization Failed\r\n");
+        return XST_FAILURE;
+    }
+    else{
+    	xil_printf("Successfully Initialised UART \r\n");
+    }
+
+    // Check timer
+    InitializeTimer(TMRCTR_DEVICE_ID);
+
+
+    // Read image data
+    xil_printf("Receiving Image...\r\n");
+    readImageFromUART(image, &height, &width);
+    xil_printf("Received Image\r\n");
+
+    // Apply Sobel Filter
+    StartTimer();
+    applySobelFilter(image, output_image, height, width);
+    u32 elapsedTime = StopTimer();
+
+
+    /***
+    for (int i = 0; i < IMG_HEIGHT; i++) {
+        for (int j = 0; j < IMG_WIDTH; j++) {
+            printf("%3d ", output_image[i][j]);
+        }
+        printf("\n");
+    }
+     ***/
+
+    // Send back the result
+    writeImageToUART(output_image, height, width);
+    xil_printf("Time taken for processing: %u clock cycles\n", elapsedTime);
+
+    return 0;
+
+
+}
+
+//InitializeUART Function
+#ifndef SDT
+int InitializeUART(u16 DeviceId)
+#else
+int InitializeUART(UINTPTR BaseAddress)
+#endif
+{
+	int Status;
+	XUartPs_Config *Config;
+
+	/*
+	 * Initialize the UART driver so that it's ready to use
+	 * Look up the configuration in the config table and then initialize it.
+	 */
+	#ifndef SDT
+		Config = XUartPs_LookupConfig(DeviceId);
+	#else
+		Config = XUartPs_LookupConfig(BaseAddress);
+	#endif
+
+	if (NULL == Config) {
+		return XST_FAILURE;
+	}
+
+	Status = XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	XUartPs_SetBaudRate(&Uart_Ps, 115200);
+    return XST_SUCCESS;
+}
+
+
+void readImageFromUART(unsigned char img[MAX_IMG_HEIGHT][MAX_IMG_WIDTH], unsigned *height, unsigned *width) {
+    char buffer[4096];  // Buffer to store incoming data
+    int row = 0, col = 0;
+
+    // Read first line to get dimensions
+    if (fgets(buffer, sizeof(buffer), stdin)) {
+        sscanf(buffer, "%u,%u", height, width);
+    }
+
+    // Read the image data
+    while (fgets(buffer, sizeof(buffer), stdin) && row < *height) {
+        char* token = strtok(buffer, ",");
+        col = 0;
+        while (token != NULL && col < *width) {
+            img[row][col++] = atoi(token);
+            token = strtok(NULL, ",");
+        }
+        row++;
+    }
+}
+
+void writeImageToUART(unsigned char img[MAX_IMG_HEIGHT][MAX_IMG_WIDTH], unsigned height, unsigned width) {
+    for (int i = 0; i < height; i++) {
+        for (int j = 0; j < width; j++) {
+            printf("%d", img[i][j]);
+            if (j < width - 1)
+                printf(",");
+        }
+        printf("\n");
+    }
+}
+
+void applySobelFilter(unsigned char input[MAX_IMG_HEIGHT][MAX_IMG_WIDTH], unsigned char output[MAX_IMG_HEIGHT][MAX_IMG_WIDTH], unsigned height, unsigned width) {
+    int Gx[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
+    int Gy[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
+    int i, j, x, y;
+
+    // Apply the Sobel filter on the input
+    for (i = 1; i < height - 1; i++) {
+        for (j = 1; j < width - 1; j++) {
+            int px = 0, py = 0;
+            for (x = -1; x <= 1; x++) {
+                for (y = -1; y <= 1; y++) {
+                    px += input[i + x][j + y] * Gx[x + 1][y + 1];
+                    py += input[i + x][j + y] * Gy[x + 1][y + 1];
+                }
+            }
+            int magnitude = abs(px) + abs(py);
+            output[i][j] = (magnitude > 255) ? 255 : magnitude;
+        }
+    }
+}
+
+//Timer
+int InitializeTimer(u16 DeviceId) {
+    int Status;
+    Status = XTmrCtr_Initialize(&TimerInstance, DeviceId);
+    if (Status != XST_SUCCESS) {
+        xil_printf("Timer initialization failed\n");
+        return XST_FAILURE;
+    }
+    XTmrCtr_SetOptions(&TimerInstance, TIMER_COUNTER_0, XTC_AUTO_RELOAD_OPTION);
+    return XST_SUCCESS;
+}
+
+void StartTimer() {
+    XTmrCtr_Reset(&TimerInstance, TIMER_COUNTER_0);
+    XTmrCtr_Start(&TimerInstance, TIMER_COUNTER_0);
+}
+
+u32 StopTimer() {
+    XTmrCtr_Stop(&TimerInstance, TIMER_COUNTER_0);
+    return XTmrCtr_GetValue(&TimerInstance, TIMER_COUNTER_0);
+}

@@ -1,0 +1,16 @@
+21:58:47 **** Incremental Build of configuration Debug for project sobel_filter ****
+make all 
+'Building target: sobel_filter.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/standalone_domain/bsplib/lib -o "sobel_filter.elf"  ./src/platform.o ./src/sobel.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sobel_filter.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size sobel_filter.elf  |tee "sobel_filter.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  98084	   4736	4207036	4309856	 41c360	sobel_filter.elf
+'Finished building: sobel_filter.elf.size'
+' '
+
+21:58:48 Build Finished (took 1s.18ms)
+
