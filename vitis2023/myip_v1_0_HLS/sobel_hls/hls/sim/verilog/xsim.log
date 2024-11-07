@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Nov  7 18:24:40 2024
+# Process ID: 21372
+# Current directory: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/sobel_hls/xsim_script.tcl}
+# Log file: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/sim/verilog/xsim.log
+# Journal file: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/sim/verilog\xsim.jou
+# Running On: THX_HP, OS: Windows, CPU Frequency: 1996 MHz, CPU Physical cores: 12, Host memory: 33622 MB
+#-----------------------------------------------------------
+source xsim.dir/sobel_hls/xsim_script.tcl
+# xsim {sobel_hls} -autoloadwcfg -tclbatch {sobel_hls.tcl}
+Time resolution is 1 ps
+source sobel_hls.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "1956325000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1956385 ns : File "D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/sim/verilog/sobel_hls.autotb.v" Line 250
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 200.891 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Nov  7 18:24:51 2024...

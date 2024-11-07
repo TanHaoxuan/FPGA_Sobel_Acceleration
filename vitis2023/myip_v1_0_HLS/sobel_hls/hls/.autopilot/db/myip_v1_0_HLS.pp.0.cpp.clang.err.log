@@ -1,0 +1,50 @@
+In file included from D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:3:
+D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:135:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=get_data_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:140:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=set_data_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:205:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=keep_all_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:317:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=empty_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:325:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=full_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:334:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=read_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:345:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=read_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:357:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=write_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:368:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=read_nb_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:385:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=write_nb_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+directive:1:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=sobel_hls_XLX_SEP_ PragmaOptions=name=sobel_hls_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=sobel_hls
+        ^
+D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:13:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sobel_hls_XLX_SEP_ PragmaOptions=ap_ctrl_none port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_ctrl_none port=return
+        ^
+D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:14:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sobel_hls_XLX_SEP_ PragmaOptions=axis port=S_AXIS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=S_AXIS
+        ^
+D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:15:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sobel_hls_XLX_SEP_ PragmaOptions=axis port=M_AXIS_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=M_AXIS
+        ^
+D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:22:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sobel_hls_XLX_SEP_ PragmaOptions=variable=frame block factor=16 dim=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=frame block factor=16 dim=2
+        ^
+D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=sobel_hls_XLX_SEP_ PragmaOptions=variable=output block factor=16 dim=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=output block factor=16 dim=2
+        ^
+16 warnings generated.

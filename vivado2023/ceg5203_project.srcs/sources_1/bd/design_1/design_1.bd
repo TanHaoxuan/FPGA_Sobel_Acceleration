@@ -26,7 +26,7 @@
       },
       "rst_ps8_0_99M": "",
       "axi_timer_0": "",
-      "myip_v1_0_HLS_0": ""
+      "sobel_hls_0": ""
     },
     "components": {
       "zynq_ultra_ps_e_0": {
@@ -1805,25 +1805,19 @@
         "xci_path": "ip\\design_1_axi_timer_0_0\\design_1_axi_timer_0_0.xci",
         "inst_hier_path": "axi_timer_0"
       },
-      "myip_v1_0_HLS_0": {
-        "vlnv": "xilinx.com:hls:myip_v1_0_HLS:1.0",
-        "ip_revision": "2113750867",
-        "xci_name": "design_1_myip_v1_0_HLS_0_1",
-        "xci_path": "ip\\design_1_myip_v1_0_HLS_0_1\\design_1_myip_v1_0_HLS_0_1.xci",
-        "inst_hier_path": "myip_v1_0_HLS_0"
+      "sobel_hls_0": {
+        "vlnv": "xilinx.com:hls:sobel_hls:1.0",
+        "ip_revision": "2113812505",
+        "xci_name": "design_1_sobel_hls_0_0",
+        "xci_path": "ip\\design_1_sobel_hls_0_0\\design_1_sobel_hls_0_0.xci",
+        "inst_hier_path": "sobel_hls_0"
       }
     },
     "interface_nets": {
       "axi_fifo_mm_s_0_AXI_STR_TXD": {
         "interface_ports": [
-          "myip_v1_0_HLS_0/S_AXIS",
+          "sobel_hls_0/S_AXIS",
           "axi_fifo_mm_s_0/AXI_STR_TXD"
-        ]
-      },
-      "myip_v1_0_HLS_0_M_AXIS": {
-        "interface_ports": [
-          "myip_v1_0_HLS_0/M_AXIS",
-          "axi_fifo_mm_s_0/AXI_STR_RXD"
         ]
       },
       "ps8_0_axi_periph_M00_AXI": {
@@ -1842,6 +1836,12 @@
         "interface_ports": [
           "ps8_0_axi_periph/M02_AXI",
           "axi_timer_0/S_AXI"
+        ]
+      },
+      "sobel_hls_0_M_AXIS": {
+        "interface_ports": [
+          "sobel_hls_0/M_AXIS",
+          "axi_fifo_mm_s_0/AXI_STR_RXD"
         ]
       },
       "zynq_ultra_ps_e_0_M_AXI_HPM0_FPD": {
@@ -1868,7 +1868,7 @@
           "ps8_0_axi_periph/M01_ARESETN",
           "axi_timer_0/s_axi_aresetn",
           "ps8_0_axi_periph/M02_ARESETN",
-          "myip_v1_0_HLS_0/ap_rst_n"
+          "sobel_hls_0/ap_rst_n"
         ]
       },
       "zynq_ultra_ps_e_0_pl_clk0": {
@@ -1883,7 +1883,7 @@
           "ps8_0_axi_periph/M01_ACLK",
           "axi_timer_0/s_axi_aclk",
           "ps8_0_axi_periph/M02_ACLK",
-          "myip_v1_0_HLS_0/ap_clk"
+          "sobel_hls_0/ap_clk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {

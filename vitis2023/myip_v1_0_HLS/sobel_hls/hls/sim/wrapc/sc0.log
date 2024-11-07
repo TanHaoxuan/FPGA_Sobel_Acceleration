@@ -1,0 +1,7 @@
+   Build using "D:/Program/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling myip_v1_0_HLS.cpp_pre.cpp.tb.cpp
+   Compiling apatb_sobel_hls.cpp
+   Compiling test_myip_v1_0_HLS-1.cpp_pre.cpp.tb.cpp
+   Compiling apatb_sobel_hls_util.cpp
+   Compiling apatb_sobel_hls_ir.ll
+   Generating cosim.tv.exe

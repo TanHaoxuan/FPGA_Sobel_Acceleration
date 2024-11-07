@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 54,
+    "calls": "",
+    "file": "myip_v1_0_HLS.cpp",
+    "fileloc": 12,
+    "instructions": 243,
+    "loads": {
+      "L": 8
+    },
+    "name": "sobel_hls",
+    "stores": {
+      "L": 17
+    },
+    "total_instructions": 377
+  }
+}

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Sat Nov  2 14:37:37 2024
+| Date         : Thu Nov  7 18:38:35 2024
 | Host         : THX_HP running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -200,8 +200,8 @@ Table of Contents
 +------------------------------+------+
 | design_1_zynq_ultra_ps_e_0_0 |    1 |
 | design_1_xbar_0              |    1 |
+| design_1_sobel_hls_0_0       |    1 |
 | design_1_rst_ps8_0_99M_0     |    1 |
-| design_1_myip_v1_0_HLS_0_1   |    1 |
 | design_1_axi_timer_0_0       |    1 |
 | design_1_axi_fifo_mm_s_0_0   |    1 |
 | design_1_auto_pc_1           |    1 |

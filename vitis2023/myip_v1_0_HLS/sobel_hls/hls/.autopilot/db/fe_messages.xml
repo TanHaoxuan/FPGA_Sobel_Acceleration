@@ -1,0 +1,213 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:135:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:140:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:205:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:317:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:325:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:334:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:345:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:357:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:368:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Program/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\ap_axi_sdata.h:385:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sobel_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=sobel_hls" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=S_AXIS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=M_AXIS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=frame block factor=16 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=output block factor=16 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame': Block partitioning with factor 16 on dimension 2.">
+        <args Dim="2" Factor="16" Mode="Block" UOName="frame"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20:19" msg_body="Applying array_partition to 'output': Block partitioning with factor 16 on dimension 2.">
+        <args Dim="2" Factor="16" Mode="Block" UOName="output"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:43:30" msg_body="Loop 'VITIS_LOOP_43_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_43_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:44:34" msg_body="Loop 'VITIS_LOOP_44_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_44_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:12:0" msg_body="Unrolling loop 'VITIS_LOOP_43_5' (D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:43:30) in function 'sobel_hls' completely with a factor of 3">
+        <args Factor="3" LoopLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:43:30" LoopName="VITIS_LOOP_43_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:12:0" msg_body="Unrolling loop 'VITIS_LOOP_44_6' (D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:44:34) in function 'sobel_hls' completely with a factor of 3">
+        <args Factor="3" LoopLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:44:34" LoopName="VITIS_LOOP_44_6"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_0 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_0">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_0" PragmaType="array_partition" VarName="frame_0" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_0' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_1 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_1">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_1" PragmaType="array_partition" VarName="frame_1" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_1' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_10 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_10">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_10" PragmaType="array_partition" VarName="frame_10" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_10' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_10" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_11 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_11">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_11" PragmaType="array_partition" VarName="frame_11" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_11' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_11" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_12 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_12">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_12" PragmaType="array_partition" VarName="frame_12" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_12' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_12" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_13 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_13">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_13" PragmaType="array_partition" VarName="frame_13" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_13' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_13" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_14 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_14">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_14" PragmaType="array_partition" VarName="frame_14" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_14' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_14" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_15 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_15">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_15" PragmaType="array_partition" VarName="frame_15" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_15' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_15" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_2 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_2">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_2" PragmaType="array_partition" VarName="frame_2" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_2' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_2" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_3 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_3">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_3" PragmaType="array_partition" VarName="frame_3" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_3' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_4 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_4">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_4" PragmaType="array_partition" VarName="frame_4" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_4' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_4" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_5 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_5">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_5" PragmaType="array_partition" VarName="frame_5" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_5' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_5" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_6 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_6">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_6" PragmaType="array_partition" VarName="frame_6" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_6' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_6" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_7 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_7">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_7" PragmaType="array_partition" VarName="frame_7" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_7' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_7" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_8 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_8">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_8" PragmaType="array_partition" VarName="frame_8" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_8' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_8" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="array_partition dim=1 type=cyclic factor=3 variable=frame_9 1 sobel_hls D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16 frame_9">
+        <args PragmaFunction="sobel_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=frame_9" PragmaType="array_partition" VarName="frame_9" varLoc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame_9' due to pipeline pragma">
+        <args Dim="1" Factor="3" Mode="cyclic" Name="frame_9" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_0': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_1': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_2': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_3': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_4': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_5': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_6': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_7': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_8': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_9': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_10': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_11': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_12': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_13': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_14': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_14"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16" msg_body="Applying array_partition to 'frame_15': Cyclic partitioning with factor 3 on dimension 1.">
+        <args Dim="1" Factor="3" Mode="Cyclic" UOName="frame_15"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

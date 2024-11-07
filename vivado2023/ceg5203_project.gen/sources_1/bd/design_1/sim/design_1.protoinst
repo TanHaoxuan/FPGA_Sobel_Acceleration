@@ -115,32 +115,6 @@
 						"WVALID": { "actual": "s_axi_wvalid"}
 					}
 				},
-				"/myip_v1_0_HLS_0/M_AXIS": {
-					"interface": "xilinx.com:interface:axis:1.0",
-					"ports": {
-						"ACLK": { "actual": "ap_clk"},
-						"ARESETN": { "actual": "ap_rst_n"},
-						"TDATA": { "actual": "M_AXIS_TDATA[31:0]"},
-						"TKEEP": { "actual": "M_AXIS_TKEEP[3:0]"},
-						"TLAST": { "actual": "M_AXIS_TLAST[0:0]"},
-						"TREADY": { "actual": "M_AXIS_TREADY"},
-						"TSTRB": { "actual": "M_AXIS_TSTRB[3:0]"},
-						"TVALID": { "actual": "M_AXIS_TVALID"}
-					}
-				},
-				"/myip_v1_0_HLS_0/S_AXIS": {
-					"interface": "xilinx.com:interface:axis:1.0",
-					"ports": {
-						"ACLK": { "actual": "ap_clk"},
-						"ARESETN": { "actual": "ap_rst_n"},
-						"TDATA": { "actual": "S_AXIS_TDATA[31:0]"},
-						"TKEEP": { "actual": "S_AXIS_TKEEP[3:0]"},
-						"TLAST": { "actual": "S_AXIS_TLAST[0:0]"},
-						"TREADY": { "actual": "S_AXIS_TREADY"},
-						"TSTRB": { "actual": "S_AXIS_TSTRB[3:0]"},
-						"TVALID": { "actual": "S_AXIS_TVALID"}
-					}
-				},
 				"/ps8_0_axi_periph/M00_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
@@ -925,6 +899,32 @@
 						"WREADY": { "actual": "s_axi_wready[0:0]"},
 						"WSTRB": { "actual": "s_axi_wstrb[3:0]"},
 						"WVALID": { "actual": "s_axi_wvalid[0:0]"}
+					}
+				},
+				"/sobel_hls_0/M_AXIS": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "M_AXIS_TDATA[31:0]"},
+						"TKEEP": { "actual": "M_AXIS_TKEEP[3:0]"},
+						"TLAST": { "actual": "M_AXIS_TLAST[0:0]"},
+						"TREADY": { "actual": "M_AXIS_TREADY"},
+						"TSTRB": { "actual": "M_AXIS_TSTRB[3:0]"},
+						"TVALID": { "actual": "M_AXIS_TVALID"}
+					}
+				},
+				"/sobel_hls_0/S_AXIS": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "S_AXIS_TDATA[31:0]"},
+						"TKEEP": { "actual": "S_AXIS_TKEEP[3:0]"},
+						"TLAST": { "actual": "S_AXIS_TLAST[0:0]"},
+						"TREADY": { "actual": "S_AXIS_TREADY"},
+						"TSTRB": { "actual": "S_AXIS_TSTRB[3:0]"},
+						"TVALID": { "actual": "S_AXIS_TVALID"}
 					}
 				},
 				"/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD": {

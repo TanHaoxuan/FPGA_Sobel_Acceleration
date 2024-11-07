@@ -1,0 +1,3 @@
+relativeroot=D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS
+original_argv=--mode hls --package --config D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\hls_config.cfg --work_dir sobel_hls 
+

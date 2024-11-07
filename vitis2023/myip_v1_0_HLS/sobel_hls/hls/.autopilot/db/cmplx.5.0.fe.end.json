@@ -1,0 +1,65 @@
+{
+    "1": {
+        "name": "sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4",
+        "file": "D:\/Semester1\/CEG5203\/workspace\/project-fpga\/vitis2023\/myip_v1_0_HLS.cpp",
+        "fileloc": "40",
+        "instructions": "1057",
+        "total_instructions": "1057",
+        "calls": "",
+        "basicblocks": "21",
+        "loads": {
+            "L": "387"
+        },
+        "stores": {
+            "L": "22"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "sobel_hls",
+        "file": "myip_v1_0_HLS.cpp",
+        "fileloc": "12",
+        "instructions": "85",
+        "total_instructions": "1430",
+        "calls": "2 1 3",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2",
+        "file": "D:\/Semester1\/CEG5203\/workspace\/project-fpga\/vitis2023\/myip_v1_0_HLS.cpp",
+        "fileloc": "25",
+        "instructions": "217",
+        "total_instructions": "217",
+        "calls": "",
+        "basicblocks": "85",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "54"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "sobel_hls_Pipeline_VITIS_LOOP_55_7_VITIS_LOOP_56_8",
+        "file": "D:\/Semester1\/CEG5203\/workspace\/project-fpga\/vitis2023\/myip_v1_0_HLS.cpp",
+        "fileloc": "25",
+        "instructions": "71",
+        "total_instructions": "71",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "19"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

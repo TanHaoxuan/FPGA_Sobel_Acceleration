@@ -83,7 +83,7 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:kv260_som:part0:1.4 [current_project]
-set_property ip_repo_paths d:/Semester1/CEG5203/workspace/ceg5203assignment2/vitis2023 [current_project]
+set_property ip_repo_paths d:/Semester1/CEG5203/workspace/project-fpga/vitis2023 [current_project]
 update_ip_catalog
 set_property ip_output_repo d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -100,9 +100,9 @@ set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/w
 set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.xdc]
 set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_myip_v1_0_HLS_0_1/constraints/myip_v1_0_HLS_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_sobel_hls_0_0/constraints/sobel_hls_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
