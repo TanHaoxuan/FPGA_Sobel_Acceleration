@@ -16,7 +16,7 @@ def save_image_as_binary(image_path, output_folder, new_size):
         img_data = np.array(img, dtype=np.uint8)
 
     # Generate the output file path with the base name
-    output_file_path = f"{output_folder}/input_{base_name}.bin"
+    output_file_path = f"{output_folder}/input_{base_name}_{new_size[0]}.bin"
 
     # Write the dimensions and pixel data to a binary file
     with open(output_file_path, 'wb') as bin_file:
@@ -29,5 +29,5 @@ def save_image_as_binary(image_path, output_folder, new_size):
     print(f"Binary file saved at: {output_file_path}")
 
 # Example usage
-save_image_as_binary(image_path = 'data/image_gtr_256x256.jpeg', output_folder = 'data', new_size =(256, 256))
+save_image_as_binary(image_path = 'data/image_gtr_256x256.jpeg', output_folder = 'data', new_size =(50, 50))
 

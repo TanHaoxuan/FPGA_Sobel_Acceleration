@@ -78229,30 +78229,26 @@ using qdma_axis = hls::axis<ap_uint<WData>, WUser, WId, WDest,
 
 typedef ap_axis<32, 0, 0, 0> AXIS_wLAST;
 
-const int HEIGHT = 256;
-const int WIDTH = 256;
+
+
 
 void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS);
 
-void compute_sobel_software(const unsigned char input[HEIGHT * WIDTH], unsigned char output[HEIGHT * WIDTH]) {
+void compute_sobel_software(const unsigned char input[50][50], unsigned char output[50][50]) {
     int Gx[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
     int Gy[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
 
-    for (int y = 1; y < HEIGHT - 1; y++) {
-        for (int x = 1; x < WIDTH - 1; x++) {
-            int sum_x = 0, sum_y = 0;
-            for (int ky = -1; ky <= 1; ky++) {
-                for (int kx = -1; kx <= 1; kx++) {
-                    int px = x + kx;
-                    int py = y + ky;
-                    int pixel = input[py * WIDTH + px];
-                    sum_x += pixel * Gx[ky + 1][kx + 1];
-                    sum_y += pixel * Gy[ky + 1][kx + 1];
+    for (int y = 1; y < 50 - 1; y++) {
+        for (int x = 1; x < 50 - 1; x++) {
+            int px = 0, py = 0;
+            for (int i = -1; i <= 1; i++) {
+                for (int j = -1; j <= 1; j++) {
+                    px += input[y + i][x + j] * Gx[i + 1][j + 1];
+                    py += input[y + i][x + j] * Gy[i + 1][j + 1];
                 }
             }
-            int magnitude = abs(sum_x) + abs(sum_y);
-            magnitude = magnitude > 255 ? 255 : magnitude;
-            output[y * WIDTH + x] = magnitude;
+            int magnitude = (px < 0 ? -px : px) + (py < 0 ? -py : py);
+            output[y][x] = (magnitude > 255) ? 255 : magnitude;
         }
     }
 }
@@ -78263,14 +78259,14 @@ int main() {
     hls::stream<AXIS_wLAST> S_AXIS;
     hls::stream<AXIS_wLAST> M_AXIS;
 
-    unsigned char test_image[HEIGHT * WIDTH];
-    unsigned char result_image[HEIGHT * WIDTH];
-    unsigned char expected_output[HEIGHT * WIDTH];
+    unsigned char test_image[50][50];
+    unsigned char result_image[50][50] = {0};
+    unsigned char expected_output[50][50] = {0};
 
 
-    for (int i = 0; i < HEIGHT; i++) {
-        for (int j = 0; j < WIDTH; j++) {
-            test_image[i * WIDTH + j] = (i * j) % 256;
+    for (int i = 0; i < 50; i++) {
+        for (int j = 0; j < 50; j++) {
+            test_image[i][j] = (i * j) % 250;
         }
     }
 
@@ -78279,10 +78275,12 @@ int main() {
 
 
     printf("Transmitting Image...\n");
-    for (int i = 0; i < HEIGHT * WIDTH; i++) {
-        write_input.data = test_image[i];
-        write_input.last = (i == (HEIGHT * WIDTH - 1));
-        S_AXIS.write(write_input);
+    for (int i = 0; i < 50; i++) {
+        for (int j = 0; j < 50; j++) {
+            write_input.data = test_image[i][j];
+            write_input.last = (i == 50 - 1) && (j == 50 - 1);
+            S_AXIS.write(write_input);
+        }
     }
 
 
@@ -78290,17 +78288,21 @@ int main() {
 
 
     printf("Receiving Image...\n");
-    for (int i = 0; i < HEIGHT * WIDTH; i++) {
-        read_output = M_AXIS.read();
-        result_image[i] = read_output.data;
+    for (int i = 0; i < 50; i++) {
+        for (int j = 0; j < 50; j++) {
+            read_output = M_AXIS.read();
+            result_image[i][j] = read_output.data;
+        }
     }
 
 
     printf("Checking results...\n");
-    for (int i = 0; i < HEIGHT * WIDTH; i++) {
-        if (result_image[i] != expected_output[i]) {
-            printf("Error: Pixel %d - Expected %d, Got %d\n", i, expected_output[i], result_image[i]);
-            success = 0;
+    for (int i = 0; i < 50; i++) {
+        for (int j = 0; j < 50; j++) {
+            if (result_image[i][j] != expected_output[i][j]) {
+                printf("Error: Pixel (%d, %d) - Expected %d, Got %d\n", i, j, expected_output[i][j], result_image[i][j]);
+                success = 0;
+            }
         }
     }
 

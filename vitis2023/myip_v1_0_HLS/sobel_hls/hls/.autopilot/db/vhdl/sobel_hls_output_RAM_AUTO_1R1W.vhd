@@ -13,7 +13,7 @@ entity sobel_hls_output_RAM_AUTO_1R1W is
         MEM_TYPE        : string    := "auto"; 
         DataWidth       : integer   := 8; 
         AddressWidth    : integer   := 12;
-        AddressRange    : integer   := 4096
+        AddressRange    : integer   := 2500
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 

@@ -9747,8 +9747,8 @@ private:
 typedef ap_axis<32, 0, 0, 0> AXIS_wLAST;
 
 
-const int HEIGHT = 256;
-const int WIDTH = 256;
+
+
 
 
 __attribute__((sdx_kernel("sobel_hls", 0))) void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS) {
@@ -9762,29 +9762,29 @@ __attribute__((sdx_kernel("sobel_hls", 0))) void sobel_hls(hls::stream<AXIS_wLAS
 
 
 
- unsigned char frame[HEIGHT][WIDTH];
-    unsigned char output[HEIGHT][WIDTH];
+ unsigned char frame[50][50];
+    unsigned char output[50][50] = {0};
 
-#pragma HLS ARRAY_PARTITION variable=frame block factor=16 dim=2
-#pragma HLS ARRAY_PARTITION variable=output block factor=16 dim=2
 
- AXIS_wLAST read_input, write_output;
+
+
+    AXIS_wLAST read_input, write_output;
 
 
     int Gx[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
     int Gy[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
 
 
-    VITIS_LOOP_32_1: for (int i = 0; i < HEIGHT; i++) {
-        VITIS_LOOP_33_2: for (int j = 0; j < WIDTH; j++) {
+    VITIS_LOOP_32_1: for (int i = 0; i < 50; i++) {
+        VITIS_LOOP_33_2: for (int j = 0; j < 50; j++) {
             read_input = S_AXIS.read();
             frame[i][j] = read_input.data;
         }
     }
 
 
-    VITIS_LOOP_40_3: for (int y = 1; y < HEIGHT - 1; y++) {
-        VITIS_LOOP_41_4: for (int x = 1; x < WIDTH - 1; x++) {
+    VITIS_LOOP_40_3: for (int y = 1; y < 50 - 1; y++) {
+        VITIS_LOOP_41_4: for (int x = 1; x < 50 - 1; x++) {
             int px = 0, py = 0;
             VITIS_LOOP_43_5: for (int i = -1; i <= 1; i++) {
                 VITIS_LOOP_44_6: for (int j = -1; j <= 1; j++) {
@@ -9792,16 +9792,17 @@ __attribute__((sdx_kernel("sobel_hls", 0))) void sobel_hls(hls::stream<AXIS_wLAS
                     py += frame[y + i][x + j] * Gy[i + 1][j + 1];
                 }
             }
-            int magnitude = abs(px) + abs(py);
+            int magnitude = (px < 0 ? -px : px) + (py < 0 ? -py : py);
+
             output[y][x] = (magnitude > 255) ? 255 : magnitude;
         }
     }
 
 
-    VITIS_LOOP_55_7: for (int i = 0; i < HEIGHT; i++) {
-        VITIS_LOOP_56_8: for (int j = 0; j < WIDTH; j++) {
+    VITIS_LOOP_56_7: for (int i = 0; i < 50; i++) {
+        VITIS_LOOP_57_8: for (int j = 0; j < 50; j++) {
             write_output.data = output[i][j];
-            write_output.last = (i == HEIGHT - 1) && (j == WIDTH - 1);
+            write_output.last = (i == 50 - 1) && (j == 50 - 1);
             M_AXIS.write(write_output);
         }
     }

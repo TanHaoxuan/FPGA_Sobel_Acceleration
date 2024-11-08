@@ -78339,8 +78339,8 @@ using qdma_axis = hls::axis<ap_uint<WData>, WUser, WId, WDest,
 typedef ap_axis<32, 0, 0, 0> AXIS_wLAST;
 
 
-const int HEIGHT = 256;
-const int WIDTH = 256;
+
+
 
 
 void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS) {
@@ -78350,11 +78350,11 @@ void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS)
 
 
 
-    unsigned char frame[HEIGHT][WIDTH];
-    unsigned char output[HEIGHT][WIDTH];
+    unsigned char frame[50][50];
+    unsigned char output[50][50] = {0};
 
-#pragma HLS ARRAY_PARTITION variable=frame block factor=16 dim=2
-#pragma HLS ARRAY_PARTITION variable=output block factor=16 dim=2
+
+
 
     AXIS_wLAST read_input, write_output;
 
@@ -78363,16 +78363,16 @@ void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS)
     int Gy[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
 
 
-    for (int i = 0; i < HEIGHT; i++) {
-        for (int j = 0; j < WIDTH; j++) {
+    for (int i = 0; i < 50; i++) {
+        for (int j = 0; j < 50; j++) {
             read_input = S_AXIS.read();
             frame[i][j] = read_input.data;
         }
     }
 
 
-    for (int y = 1; y < HEIGHT - 1; y++) {
-        for (int x = 1; x < WIDTH - 1; x++) {
+    for (int y = 1; y < 50 - 1; y++) {
+        for (int x = 1; x < 50 - 1; x++) {
             int px = 0, py = 0;
             for (int i = -1; i <= 1; i++) {
                 for (int j = -1; j <= 1; j++) {
@@ -78380,16 +78380,17 @@ void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS)
                     py += frame[y + i][x + j] * Gy[i + 1][j + 1];
                 }
             }
-            int magnitude = abs(px) + abs(py);
+            int magnitude = (px < 0 ? -px : px) + (py < 0 ? -py : py);
+
             output[y][x] = (magnitude > 255) ? 255 : magnitude;
         }
     }
 
 
-    for (int i = 0; i < HEIGHT; i++) {
-        for (int j = 0; j < WIDTH; j++) {
+    for (int i = 0; i < 50; i++) {
+        for (int j = 0; j < 50; j++) {
             write_output.data = output[i][j];
-            write_output.last = (i == HEIGHT - 1) && (j == WIDTH - 1);
+            write_output.last = (i == 50 - 1) && (j == 50 - 1);
             M_AXIS.write(write_output);
         }
     }
@@ -78419,5 +78420,5 @@ apatb_sobel_hls_ir(S_AXIS, M_AXIS);
 return ;
 }
 #endif
-# 62 "D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp"
+# 63 "D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp"
 

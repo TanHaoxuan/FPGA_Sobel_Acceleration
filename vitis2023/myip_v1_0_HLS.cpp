@@ -5,8 +5,8 @@
 typedef ap_axis<32, 0, 0, 0> AXIS_wLAST;
 
 // Define the constants for image dimensions
-const int HEIGHT = 256;
-const int WIDTH = 256;
+#define HEIGHT  50
+#define WIDTH  50
 
 // Sobel filter HLS implementation
 void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS) {
@@ -17,10 +17,10 @@ void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS)
 
     // Memory to store the image frame and output
     unsigned char frame[HEIGHT][WIDTH];
-    unsigned char output[HEIGHT][WIDTH];
+    unsigned char output[HEIGHT][WIDTH] = {0};
 
-    #pragma HLS ARRAY_PARTITION variable=frame block factor=16 dim=2
-    #pragma HLS ARRAY_PARTITION variable=output block factor=16 dim=2
+    //#pragma HLS array_partition variable=frame dim=2 complete
+    //#pragma HLS array_partition variable=output dim=2 complete
 
     AXIS_wLAST read_input, write_output;
 
@@ -46,7 +46,8 @@ void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS)
                     py += frame[y + i][x + j] * Gy[i + 1][j + 1];
                 }
             }
-            int magnitude = abs(px) + abs(py);
+            int magnitude = (px < 0 ? -px : px) + (py < 0 ? -py : py);
+
             output[y][x] = (magnitude > 255) ? 255 : magnitude;
         }
     }

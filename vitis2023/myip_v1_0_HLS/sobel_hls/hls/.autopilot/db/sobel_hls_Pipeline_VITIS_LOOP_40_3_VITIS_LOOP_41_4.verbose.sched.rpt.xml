@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4'" level="0">
-<item name = "Date">Thu Nov  7 18:22:53 2024
+<item name = "Date">Fri Nov  8 22:16:18 2024
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">sobel_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.654 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.641 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">64531, 64531, 0.645 ms, 0.645 ms, 64531, 64531, no</column>
+<column name="">2317, 2317, 23.170 us, 23.170 us, 2317, 2317, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_40_3_VITIS_LOOP_41_4">64529, 64529, 15, 1, 1, 64516, yes</column>
+<column name="- VITIS_LOOP_40_3_VITIS_LOOP_41_4">2315, 2315, 13, 1, 1, 2304, yes</column>
 </table>
 </item>
 </section>

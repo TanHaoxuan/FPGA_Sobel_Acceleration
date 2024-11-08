@@ -10,7 +10,7 @@ def csv_to_image(csv_filepath, output_name, output_folder='data' ):
         # Initialize an empty list to store processed rows
         data = []
         # Skip the first four lines
-        for _ in range(4):
+        for _ in range(13):
             next(reader, None)
         for row in reader:
             # Filter out empty strings and convert to integers
@@ -42,4 +42,4 @@ def csv_to_image(csv_filepath, output_name, output_folder='data' ):
         print(f"Image already exists at {output_image_path}, no new image created.")
 
 # Example usage
-csv_to_image('data/output_image.txt', output_name='gtr', output_folder='data' )
+csv_to_image('data/output_image.txt', output_name='gtr_fpga', output_folder='data' )
