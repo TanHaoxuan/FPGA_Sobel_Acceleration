@@ -15,18 +15,18 @@
         <PipelineType>no</PipelineType>
         <SummaryOfTimingAnalysis>
             <unit>ns</unit>
-            <EstimatedClockPeriod>6.654</EstimatedClockPeriod>
+            <EstimatedClockPeriod>6.641</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>195625</Best-caseLatency>
-            <Average-caseLatency>195625</Average-caseLatency>
-            <Worst-caseLatency>195625</Worst-caseLatency>
-            <Best-caseRealTimeLatency>1.956 ms</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>1.956 ms</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>1.956 ms</Worst-caseRealTimeLatency>
-            <Interval-min>195626</Interval-min>
-            <Interval-max>195626</Interval-max>
+            <Best-caseLatency>9842</Best-caseLatency>
+            <Average-caseLatency>9842</Average-caseLatency>
+            <Worst-caseLatency>9842</Worst-caseLatency>
+            <Best-caseRealTimeLatency>98.420 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>98.420 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>98.420 us</Worst-caseRealTimeLatency>
+            <Interval-min>9843</Interval-min>
+            <Interval-max>9843</Interval-max>
         </SummaryOfOverallLatency>
         <SummaryOfViolations>
             <IssueType>-</IssueType>
@@ -36,10 +36,10 @@
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
-            <BRAM_18K>128</BRAM_18K>
-            <DSP>1</DSP>
-            <FF>1395</FF>
-            <LUT>10061</LUT>
+            <BRAM_18K>11</BRAM_18K>
+            <DSP>2</DSP>
+            <FF>1124</FF>
+            <LUT>3074</LUT>
             <URAM>0</URAM>
         </Resources>
         <AvailableResources>
@@ -223,31 +223,109 @@
             <ModuleName>sobel_hls</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_312</InstName>
+                    <InstName>grp_sobel_hls_Pipeline_1_fu_98</InstName>
+                    <ModuleName>sobel_hls_Pipeline_1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>98</ID>
+                    <BindInstances>empty_13_fu_58_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_104</InstName>
                     <ModuleName>sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>312</ID>
-                    <BindInstances>add_ln32_1_fu_874_p2 add_ln32_fu_886_p2 mul_9ns_11ns_19_1_1_U1 add_ln33_fu_962_p2</BindInstances>
+                    <ID>104</ID>
+                    <BindInstances>add_ln32_1_fu_255_p2 add_ln32_fu_267_p2 mul_6ns_8ns_13_1_1_U2 mul_6ns_8ns_13_1_1_U4 add_ln33_fu_383_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4_fu_372</InstName>
+                    <InstName>grp_sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4_fu_125</InstName>
                     <ModuleName>sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>372</ID>
-                    <BindInstances>add_ln40_fu_4176_p2 add_ln40_2_fu_4202_p2 add_ln40_3_fu_4208_p2 mul_8ns_10ns_17_1_1_U59 add_ln40_1_fu_4347_p2 mul_8ns_10ns_17_1_1_U60 add_ln45_fu_4309_p2 add_ln45_1_fu_4250_p2 mul_8ns_10ns_17_1_1_U58 sub_ln45_fu_7881_p2 tmp_fu_7891_p2 add_ln45_2_fu_7909_p2 tmp6_fu_7927_p2 sub_ln46_fu_7945_p2 neg_fu_7967_p2 neg2_fu_7991_p2 add_ln49_fu_8015_p2 magnitude_fu_8021_p2</BindInstances>
+                    <ID>125</ID>
+                    <BindInstances>add_ln40_fu_937_p2 add_ln40_2_fu_963_p2 add_ln4042_fu_969_p2 mac_muladd_6ns_6ns_6ns_12_4_1_U46 mul_6ns_8ns_13_1_1_U33 add_ln45_1_fu_1086_p2 add_ln40_1_fu_1092_p2 mac_muladd_6ns_6ns_6ns_12_4_1_U46 add_ln41_fu_997_p2 mul_6ns_8ns_13_1_1_U34 add_ln41_1_fu_1120_p2 mul_6ns_8ns_13_1_1_U35 add_ln45_2_fu_1157_p2 add_ln45_3_fu_1163_p2 mul_6ns_8ns_13_1_1_U36 add_ln45_4_fu_1206_p2 add_ln45_5_fu_1225_p2 mul_6ns_8ns_13_1_1_U37 add_ln45_6_fu_1267_p2 add_ln45_7_fu_1286_p2 mul_6ns_8ns_13_1_1_U32 add_ln45_8_fu_1315_p2 add_ln45_9_fu_1321_p2 add_ln45_10_fu_1340_p2 add_ln45_11_fu_1359_p2 tmp2_fu_1523_p2 sub_ln45_fu_1541_p2 tmp_fu_1574_p2 add_ln46_fu_1592_p2 sub_ln46_fu_1602_p2 add_ln45_fu_1635_p2 sub_ln49_fu_1681_p2 sub_ln49_1_fu_1707_p2 add_ln49_fu_1725_p2 magnitude_fu_1731_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_sobel_hls_Pipeline_VITIS_LOOP_55_7_VITIS_LOOP_56_8_fu_440</InstName>
-                    <ModuleName>sobel_hls_Pipeline_VITIS_LOOP_55_7_VITIS_LOOP_56_8</ModuleName>
+                    <InstName>grp_sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8_fu_139</InstName>
+                    <ModuleName>sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>440</ID>
-                    <BindInstances>add_ln55_1_fu_396_p2 add_ln55_fu_408_p2 add_ln56_fu_500_p2</BindInstances>
+                    <ID>139</ID>
+                    <BindInstances>add_ln56_1_fu_129_p2 add_ln56_fu_141_p2 mac_muladd_6ns_6ns_6ns_12_4_1_U61 mac_muladd_6ns_6ns_6ns_12_4_1_U61 add_ln57_fu_179_p2</BindInstances>
                 </Instance>
             </InstancesList>
-            <BindInstances>frame_U frame_1_U frame_2_U frame_3_U frame_4_U frame_5_U frame_6_U frame_7_U frame_8_U frame_9_U frame_10_U frame_11_U frame_12_U frame_13_U frame_14_U frame_15_U frame_16_U frame_17_U frame_18_U frame_19_U frame_20_U frame_21_U frame_22_U frame_23_U frame_24_U frame_25_U frame_26_U frame_27_U frame_28_U frame_29_U frame_30_U frame_31_U frame_32_U frame_33_U frame_34_U frame_35_U frame_36_U frame_37_U frame_38_U frame_39_U frame_40_U frame_41_U frame_42_U frame_43_U frame_44_U frame_45_U frame_46_U frame_47_U output_U output_1_U output_2_U output_3_U output_4_U output_5_U output_6_U output_7_U output_8_U output_9_U output_10_U output_11_U output_12_U output_13_U output_14_U output_15_U</BindInstances>
+            <BindInstances>frame_U frame_1_U frame_2_U frame_3_U frame_4_U frame_5_U frame_6_U frame_7_U frame_8_U output_U</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
+        <Module>
+            <Name>sobel_hls_Pipeline_1</Name>
+            <Loops>
+                <Loop1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>2.473</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>2502</Best-caseLatency>
+                    <Average-caseLatency>2502</Average-caseLatency>
+                    <Worst-caseLatency>2502</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>25.020 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>25.020 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>25.020 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>2502</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <Loop1>
+                        <Name>Loop 1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>2500</TripCount>
+                        <Latency>2500</Latency>
+                        <AbsoluteTimeLatency>25.000 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </Loop1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>-</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <Loop1>
+                            <Name>Loop 1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>-</SourceLocation>
+                        </Loop1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>14</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>65</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Loop 1" OPTYPE="add" PRAGMA="" RTLNAME="empty_13_fu_58_p2" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="empty_13"/>
+            </BindNodes>
+        </Module>
         <Module>
             <Name>sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2</Name>
             <Loops>
@@ -257,27 +335,27 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>3.504</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>4.248</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>65549</Best-caseLatency>
-                    <Average-caseLatency>65549</Average-caseLatency>
-                    <Worst-caseLatency>65549</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.655 ms</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>0.655 ms</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>0.655 ms</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>65549</PipelineInitiationInterval>
+                    <Best-caseLatency>2510</Best-caseLatency>
+                    <Average-caseLatency>2510</Average-caseLatency>
+                    <Worst-caseLatency>2510</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>25.100 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>25.100 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>25.100 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>2510</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
                     <VITIS_LOOP_32_1_VITIS_LOOP_33_2>
                         <Name>VITIS_LOOP_32_1_VITIS_LOOP_33_2</Name>
                         <Slack>7.30</Slack>
-                        <TripCount>65536</TripCount>
-                        <Latency>65547</Latency>
-                        <AbsoluteTimeLatency>0.655 ms</AbsoluteTimeLatency>
+                        <TripCount>2500</TripCount>
+                        <Latency>2508</Latency>
+                        <AbsoluteTimeLatency>25.080 us</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
-                        <PipelineDepth>13</PipelineDepth>
+                        <PipelineDepth>10</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
                     </VITIS_LOOP_32_1_VITIS_LOOP_33_2>
@@ -298,13 +376,13 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <DSP>1</DSP>
+                    <DSP>0</DSP>
                     <AVAIL_DSP>1248</AVAIL_DSP>
-                    <UTIL_DSP>~0</UTIL_DSP>
-                    <FF>575</FF>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <FF>444</FF>
                     <AVAIL_FF>234240</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>468</LUT>
+                    <LUT>492</LUT>
                     <AVAIL_LUT>117120</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -316,10 +394,11 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_1_fu_874_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln32_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_fu_886_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln32"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_11ns_19_1_1_U1" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln32"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln33_fu_962_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:33" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln33"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_1_fu_255_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln32_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_fu_267_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln32"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_8ns_13_1_1_U2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:32" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln32"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_8ns_13_1_1_U4" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:33" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln33"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_1_VITIS_LOOP_33_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln33_fu_383_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:33" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln33"/>
             </BindNodes>
         </Module>
         <Module>
@@ -331,27 +410,27 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>6.654</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>6.641</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>64531</Best-caseLatency>
-                    <Average-caseLatency>64531</Average-caseLatency>
-                    <Worst-caseLatency>64531</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.645 ms</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>0.645 ms</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>0.645 ms</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>64531</PipelineInitiationInterval>
+                    <Best-caseLatency>2317</Best-caseLatency>
+                    <Average-caseLatency>2317</Average-caseLatency>
+                    <Worst-caseLatency>2317</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>23.170 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>23.170 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>23.170 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>2317</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
                     <VITIS_LOOP_40_3_VITIS_LOOP_41_4>
                         <Name>VITIS_LOOP_40_3_VITIS_LOOP_41_4</Name>
                         <Slack>7.30</Slack>
-                        <TripCount>64516</TripCount>
-                        <Latency>64529</Latency>
-                        <AbsoluteTimeLatency>0.645 ms</AbsoluteTimeLatency>
+                        <TripCount>2304</TripCount>
+                        <Latency>2315</Latency>
+                        <AbsoluteTimeLatency>23.150 us</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
-                        <PipelineDepth>15</PipelineDepth>
+                        <PipelineDepth>13</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
                     </VITIS_LOOP_40_3_VITIS_LOOP_41_4>
@@ -372,15 +451,15 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <DSP>0</DSP>
+                    <DSP>1</DSP>
                     <AVAIL_DSP>1248</AVAIL_DSP>
-                    <UTIL_DSP>0</UTIL_DSP>
-                    <FF>765</FF>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>604</FF>
                     <AVAIL_FF>234240</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>6017</LUT>
+                    <LUT>1847</LUT>
                     <AVAIL_LUT>117120</AVAIL_LUT>
-                    <UTIL_LUT>5</UTIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>288</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
@@ -390,97 +469,116 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln40_fu_4176_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:40" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln40"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln40_2_fu_4202_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:40" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln40_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln40_3_fu_4208_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:40" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln40_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_10ns_17_1_1_U59" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:40" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln40"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln40_1_fu_4347_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:40" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln40_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_10ns_17_1_1_U60" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_fu_4309_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_1_fu_4250_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_10ns_17_1_1_U58" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:42" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln42"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_fu_7881_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="sub" PRAGMA="" RTLNAME="tmp_fu_7891_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:42" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_2_fu_7909_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="sub" PRAGMA="" RTLNAME="tmp6_fu_7927_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp6"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln46_fu_7945_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln46"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="sub" PRAGMA="" RTLNAME="neg_fu_7967_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="neg"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="sub" PRAGMA="" RTLNAME="neg2_fu_7991_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="neg2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln49_fu_8015_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:49" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln49"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="magnitude_fu_8021_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:49" STORAGESUBTYPE="" URAM="0" VARIABLE="magnitude"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln40_fu_937_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:40" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln40"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln40_2_fu_963_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:40" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln40_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln4042_fu_969_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:40" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln4042"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_6ns_6ns_6ns_12_4_1_U46" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln51"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_8ns_13_1_1_U33" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:40" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln40"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_1_fu_1086_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln40_1_fu_1092_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:40" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln40_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_6ns_6ns_6ns_12_4_1_U46" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:51" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln51"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_fu_997_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_8ns_13_1_1_U34" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln41"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln41_1_fu_1120_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln41_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_8ns_13_1_1_U35" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_2_fu_1157_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_3_fu_1163_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_8ns_13_1_1_U36" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_4_fu_1206_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_5_fu_1225_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_8ns_13_1_1_U37" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln45_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_6_fu_1267_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_7_fu_1286_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_8ns_13_1_1_U32" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:42" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln42"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_8_fu_1315_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_9_fu_1321_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_10_fu_1340_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_11_fu_1359_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="sub" PRAGMA="" RTLNAME="tmp2_fu_1523_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:42" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln45_fu_1541_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln45"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="sub" PRAGMA="" RTLNAME="tmp_fu_1574_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln46_fu_1592_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln46_fu_1602_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln46"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln45_fu_1635_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:45" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln45"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln49_fu_1681_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:49" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln49"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln49_1_fu_1707_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:49" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln49_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln49_fu_1725_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:49" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln49"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_40_3_VITIS_LOOP_41_4" OPTYPE="add" PRAGMA="" RTLNAME="magnitude_fu_1731_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:49" STORAGESUBTYPE="" URAM="0" VARIABLE="magnitude"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>sobel_hls_Pipeline_VITIS_LOOP_55_7_VITIS_LOOP_56_8</Name>
+            <Name>sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8</Name>
             <Loops>
-                <VITIS_LOOP_55_7_VITIS_LOOP_56_8/>
+                <VITIS_LOOP_56_7_VITIS_LOOP_57_8/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>2.726</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>2.800</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>65538</Best-caseLatency>
-                    <Average-caseLatency>65538</Average-caseLatency>
-                    <Worst-caseLatency>65538</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.655 ms</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>0.655 ms</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>0.655 ms</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>65538</PipelineInitiationInterval>
+                    <Best-caseLatency>2505</Best-caseLatency>
+                    <Average-caseLatency>2505</Average-caseLatency>
+                    <Worst-caseLatency>2505</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>25.050 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>25.050 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>25.050 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>2505</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_55_7_VITIS_LOOP_56_8>
-                        <Name>VITIS_LOOP_55_7_VITIS_LOOP_56_8</Name>
+                    <VITIS_LOOP_56_7_VITIS_LOOP_57_8>
+                        <Name>VITIS_LOOP_56_7_VITIS_LOOP_57_8</Name>
                         <Slack>7.30</Slack>
-                        <TripCount>65536</TripCount>
-                        <Latency>65536</Latency>
-                        <AbsoluteTimeLatency>0.655 ms</AbsoluteTimeLatency>
+                        <TripCount>2500</TripCount>
+                        <Latency>2503</Latency>
+                        <AbsoluteTimeLatency>25.030 us</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
-                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineDepth>5</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_55_7_VITIS_LOOP_56_8>
+                    </VITIS_LOOP_56_7_VITIS_LOOP_57_8>
                 </SummaryOfLoopLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:56</SourceLocation>
+                    <SourceLocation>D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:57</SourceLocation>
                     <SummaryOfLoopViolations>
-                        <VITIS_LOOP_55_7_VITIS_LOOP_56_8>
-                            <Name>VITIS_LOOP_55_7_VITIS_LOOP_56_8</Name>
+                        <VITIS_LOOP_56_7_VITIS_LOOP_57_8>
+                            <Name>VITIS_LOOP_56_7_VITIS_LOOP_57_8</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:55</SourceLocation>
-                        </VITIS_LOOP_55_7_VITIS_LOOP_56_8>
+                            <SourceLocation>D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:56</SourceLocation>
+                        </VITIS_LOOP_56_7_VITIS_LOOP_57_8>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>44</FF>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>49</FF>
                     <AVAIL_FF>234240</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>284</LUT>
+                    <LUT>204</LUT>
                     <AVAIL_LUT>117120</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>288</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
-                    <DSP>0</DSP>
-                    <AVAIL_DSP>1248</AVAIL_DSP>
-                    <UTIL_DSP>0</UTIL_DSP>
                     <URAM>0</URAM>
                     <AVAIL_URAM>64</AVAIL_URAM>
                     <UTIL_URAM>0</UTIL_URAM>
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_55_7_VITIS_LOOP_56_8" OPTYPE="add" PRAGMA="" RTLNAME="add_ln55_1_fu_396_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:55" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln55_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_55_7_VITIS_LOOP_56_8" OPTYPE="add" PRAGMA="" RTLNAME="add_ln55_fu_408_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:55" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln55"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_55_7_VITIS_LOOP_56_8" OPTYPE="add" PRAGMA="" RTLNAME="add_ln56_fu_500_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln56"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_56_7_VITIS_LOOP_57_8" OPTYPE="add" PRAGMA="" RTLNAME="add_ln56_1_fu_129_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln56_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_56_7_VITIS_LOOP_57_8" OPTYPE="add" PRAGMA="" RTLNAME="add_ln56_fu_141_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln56"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_56_7_VITIS_LOOP_57_8" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_6ns_6ns_6ns_12_4_1_U61" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln58"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_56_7_VITIS_LOOP_57_8" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_6ns_6ns_6ns_12_4_1_U61" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_56_7_VITIS_LOOP_57_8" OPTYPE="add" PRAGMA="" RTLNAME="add_ln57_fu_179_p2" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln57"/>
             </BindNodes>
         </Module>
         <Module>
@@ -489,16 +587,16 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>6.654</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>6.641</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>195625</Best-caseLatency>
-                    <Average-caseLatency>195625</Average-caseLatency>
-                    <Worst-caseLatency>195625</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>1.956 ms</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>1.956 ms</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>1.956 ms</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>195626</PipelineInitiationInterval>
+                    <Best-caseLatency>9842</Best-caseLatency>
+                    <Average-caseLatency>9842</Average-caseLatency>
+                    <Worst-caseLatency>9842</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>98.420 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>98.420 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>98.420 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9843</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfViolations>
@@ -509,88 +607,34 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <BRAM_18K>128</BRAM_18K>
+                    <BRAM_18K>11</BRAM_18K>
                     <AVAIL_BRAM>288</AVAIL_BRAM>
-                    <UTIL_BRAM>44</UTIL_BRAM>
-                    <DSP>1</DSP>
+                    <UTIL_BRAM>3</UTIL_BRAM>
+                    <DSP>2</DSP>
                     <AVAIL_DSP>1248</AVAIL_DSP>
                     <UTIL_DSP>~0</UTIL_DSP>
-                    <FF>1395</FF>
+                    <FF>1124</FF>
                     <AVAIL_FF>234240</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>10061</LUT>
+                    <LUT>3074</LUT>
                     <AVAIL_LUT>117120</AVAIL_LUT>
-                    <UTIL_LUT>8</UTIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
                     <URAM>0</URAM>
                     <AVAIL_URAM>64</AVAIL_URAM>
                     <UTIL_URAM>0</UTIL_URAM>
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_1_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_1"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_2_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_2"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_3_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_3"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_4_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_4"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_5_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_5"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_6_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_6"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_7_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_7"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_8_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_8"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_9_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_9"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_10_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_10"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_11_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_11"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_12_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_12"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_13_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_13"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_14_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_14"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_15_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_15"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_16_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_16"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_17_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_17"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_18_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_18"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_19_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_19"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_20_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_20"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_21_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_21"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_22_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_22"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_23_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_23"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_24_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_24"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_25_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_25"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_26_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_26"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_27_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_27"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_28_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_28"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_29_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_29"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_30_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_30"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_31_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_31"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_32_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_32"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_33_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_33"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_34_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_34"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_35_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_35"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_36_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_36"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_37_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_37"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_38_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_38"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_39_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_39"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_40_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_40"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_41_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_41"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_42_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_42"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_43_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_43"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_44_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_44"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_45_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_45"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_46_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_46"/>
-                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="frame_47_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 1376 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_np array" URAM="0" VARIABLE="frame_47"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_1_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_1"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_2_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_2"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_3_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_3"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_4_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_4"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_5_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_5"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_6_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_6"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_7_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_7"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_8_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_8"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_9_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_9"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_10_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_10"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_11_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_11"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_12_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_12"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_13_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_13"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_14_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_14"/>
-                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_15_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 4096 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output_15"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="frame_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 289 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="frame"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="frame_1_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 289 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="frame_1"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="frame_2_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 289 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="frame_2"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="frame_3_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 289 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="frame_3"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="frame_4_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 289 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="frame_4"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="frame_5_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 289 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="frame_5"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="frame_6_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 289 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="frame_6"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="frame_7_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 289 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="frame_7"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="frame_8_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19" STORAGESIZE="8 289 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="frame_8"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="output_U" SOURCE="D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:20" STORAGESIZE="8 2500 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="output"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
@@ -701,8 +745,6 @@
         <Pragma type="interface" location="../myip_v1_0_HLS.cpp:13" status="valid" parentFunction="sobel_hls" variable="return" isDirective="0" options="ap_ctrl_none port=return"/>
         <Pragma type="interface" location="../myip_v1_0_HLS.cpp:14" status="valid" parentFunction="sobel_hls" variable="S_AXIS" isDirective="0" options="axis port=S_AXIS"/>
         <Pragma type="interface" location="../myip_v1_0_HLS.cpp:15" status="valid" parentFunction="sobel_hls" variable="M_AXIS" isDirective="0" options="axis port=M_AXIS"/>
-        <Pragma type="array_partition" location="../myip_v1_0_HLS.cpp:22" status="valid" parentFunction="sobel_hls" variable="frame" isDirective="0" options="variable=frame block factor=16 dim=2"/>
-        <Pragma type="array_partition" location="../myip_v1_0_HLS.cpp:23" status="valid" parentFunction="sobel_hls" variable="output" isDirective="0" options="variable=output block factor=16 dim=2"/>
     </PragmaReport>
     <AutoPragmaReport/>
 </profile>

@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'sobel_hls'
 ================================================================
 + General Information: 
-    * Date:           Thu Nov  7 18:22:57 2024
+    * Date:           Fri Nov  8 22:16:22 2024
     * Version:        2023.2 (Build 4023990 on Oct 11 2023)
     * Project:        sobel_hls
     * Solution:       hls (Vivado IP Flow Target)
@@ -15,18 +15,20 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +-------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+-----------+---------+------------+------------+-----+
-    |                        Modules                        | Issue|      | Latency |  Latency  | Iteration|         |  Trip |          |           |         |            |            |     |
-    |                        & Loops                        | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|   BRAM    |   DSP   |     FF     |     LUT    | URAM|
-    +-------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+-----------+---------+------------+------------+-----+
-    |+ sobel_hls                                            |     -|  0.65|   195625|  1.956e+06|         -|   195626|      -|        no|  128 (44%)|  1 (~0%)|  1395 (~0%)|  10061 (8%)|    -|
-    | + sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2  |     -|  3.80|    65549|  6.555e+05|         -|    65549|      -|        no|          -|  1 (~0%)|   575 (~0%)|   468 (~0%)|    -|
-    |  o VITIS_LOOP_32_1_VITIS_LOOP_33_2                    |     -|  7.30|    65547|  6.555e+05|        13|        1|  65536|       yes|          -|        -|           -|           -|    -|
-    | + sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4  |     -|  0.65|    64531|  6.453e+05|         -|    64531|      -|        no|          -|        -|   765 (~0%)|   6017 (5%)|    -|
-    |  o VITIS_LOOP_40_3_VITIS_LOOP_41_4                    |     -|  7.30|    64529|  6.453e+05|        15|        1|  64516|       yes|          -|        -|           -|           -|    -|
-    | + sobel_hls_Pipeline_VITIS_LOOP_55_7_VITIS_LOOP_56_8  |     -|  4.57|    65538|  6.554e+05|         -|    65538|      -|        no|          -|        -|    44 (~0%)|   284 (~0%)|    -|
-    |  o VITIS_LOOP_55_7_VITIS_LOOP_56_8                    |     -|  7.30|    65536|  6.554e+05|         2|        1|  65536|       yes|          -|        -|           -|           -|    -|
-    +-------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+-----------+---------+------------+------------+-----+
+    +-------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+---------+------------+-----------+-----+
+    |                        Modules                        | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |         |         |            |           |     |
+    |                        & Loops                        | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   |   DSP   |     FF     |    LUT    | URAM|
+    +-------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+---------+------------+-----------+-----+
+    |+ sobel_hls                                            |     -|  0.66|     9842|  9.842e+04|         -|     9843|     -|        no|  11 (3%)|  2 (~0%)|  1124 (~0%)|  3074 (2%)|    -|
+    | + sobel_hls_Pipeline_1                                |     -|  4.83|     2502|  2.502e+04|         -|     2502|     -|        no|        -|        -|    14 (~0%)|   65 (~0%)|    -|
+    |  o Loop 1                                             |     -|  7.30|     2500|  2.500e+04|         1|        1|  2500|       yes|        -|        -|           -|          -|    -|
+    | + sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2  |     -|  3.05|     2510|  2.510e+04|         -|     2510|     -|        no|        -|        -|   444 (~0%)|  492 (~0%)|    -|
+    |  o VITIS_LOOP_32_1_VITIS_LOOP_33_2                    |     -|  7.30|     2508|  2.508e+04|        10|        1|  2500|       yes|        -|        -|           -|          -|    -|
+    | + sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4  |     -|  0.66|     2317|  2.317e+04|         -|     2317|     -|        no|        -|  1 (~0%)|   604 (~0%)|  1847 (1%)|    -|
+    |  o VITIS_LOOP_40_3_VITIS_LOOP_41_4                    |     -|  7.30|     2315|  2.315e+04|        13|        1|  2304|       yes|        -|        -|           -|          -|    -|
+    | + sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8  |     -|  4.50|     2505|  2.505e+04|         -|     2505|     -|        no|        -|  1 (~0%)|    49 (~0%)|  204 (~0%)|    -|
+    |  o VITIS_LOOP_56_7_VITIS_LOOP_57_8                    |     -|  7.30|     2503|  2.503e+04|         5|        1|  2500|       yes|        -|        -|           -|          -|    -|
+    +-------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+---------+------------+-----------+-----+
 
 
 ================================================================
@@ -73,128 +75,94 @@
 ================================================================
 == Bind Op Report
 ================================================================
-+-------------------------------------------------------+-----+--------+------------+-----+--------+---------+
-| Name                                                  | DSP | Pragma | Variable   | Op  | Impl   | Latency |
-+-------------------------------------------------------+-----+--------+------------+-----+--------+---------+
-| + sobel_hls                                           | 1   |        |            |     |        |         |
-|  + sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2 | 1   |        |            |     |        |         |
-|    add_ln32_1_fu_874_p2                               |     |        | add_ln32_1 | add | fabric | 0       |
-|    add_ln32_fu_886_p2                                 |     |        | add_ln32   | add | fabric | 0       |
-|    mul_9ns_11ns_19_1_1_U1                             | 1   |        | mul_ln32   | mul | auto   | 0       |
-|    add_ln33_fu_962_p2                                 |     |        | add_ln33   | add | fabric | 0       |
-|  + sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4 | 0   |        |            |     |        |         |
-|    add_ln40_fu_4176_p2                                |     |        | add_ln40   | add | fabric | 0       |
-|    add_ln40_2_fu_4202_p2                              |     |        | add_ln40_2 | add | fabric | 0       |
-|    add_ln40_3_fu_4208_p2                              |     |        | add_ln40_3 | add | fabric | 0       |
-|    mul_8ns_10ns_17_1_1_U59                            |     |        | mul_ln40   | mul | auto   | 0       |
-|    add_ln40_1_fu_4347_p2                              |     |        | add_ln40_1 | add | fabric | 0       |
-|    mul_8ns_10ns_17_1_1_U60                            |     |        | mul_ln45   | mul | auto   | 0       |
-|    add_ln45_fu_4309_p2                                |     |        | add_ln45   | add | fabric | 0       |
-|    add_ln45_1_fu_4250_p2                              |     |        | add_ln45_1 | add | fabric | 0       |
-|    mul_8ns_10ns_17_1_1_U58                            |     |        | mul_ln42   | mul | auto   | 0       |
-|    sub_ln45_fu_7881_p2                                |     |        | sub_ln45   | sub | fabric | 0       |
-|    tmp_fu_7891_p2                                     |     |        | tmp        | sub | fabric | 0       |
-|    add_ln45_2_fu_7909_p2                              |     |        | add_ln45_2 | add | fabric | 0       |
-|    tmp6_fu_7927_p2                                    |     |        | tmp6       | sub | fabric | 0       |
-|    sub_ln46_fu_7945_p2                                |     |        | sub_ln46   | sub | fabric | 0       |
-|    neg_fu_7967_p2                                     |     |        | neg        | sub | fabric | 0       |
-|    neg2_fu_7991_p2                                    |     |        | neg2       | sub | fabric | 0       |
-|    add_ln49_fu_8015_p2                                |     |        | add_ln49   | add | fabric | 0       |
-|    magnitude_fu_8021_p2                               |     |        | magnitude  | add | fabric | 0       |
-|  + sobel_hls_Pipeline_VITIS_LOOP_55_7_VITIS_LOOP_56_8 | 0   |        |            |     |        |         |
-|    add_ln55_1_fu_396_p2                               |     |        | add_ln55_1 | add | fabric | 0       |
-|    add_ln55_fu_408_p2                                 |     |        | add_ln55   | add | fabric | 0       |
-|    add_ln56_fu_500_p2                                 |     |        | add_ln56   | add | fabric | 0       |
-+-------------------------------------------------------+-----+--------+------------+-----+--------+---------+
++-------------------------------------------------------+-----+--------+-------------+-----+-----------+---------+
+| Name                                                  | DSP | Pragma | Variable    | Op  | Impl      | Latency |
++-------------------------------------------------------+-----+--------+-------------+-----+-----------+---------+
+| + sobel_hls                                           | 2   |        |             |     |           |         |
+|  + sobel_hls_Pipeline_1                               | 0   |        |             |     |           |         |
+|    empty_13_fu_58_p2                                  |     |        | empty_13    | add | fabric    | 0       |
+|  + sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2 | 0   |        |             |     |           |         |
+|    add_ln32_1_fu_255_p2                               |     |        | add_ln32_1  | add | fabric    | 0       |
+|    add_ln32_fu_267_p2                                 |     |        | add_ln32    | add | fabric    | 0       |
+|    mul_6ns_8ns_13_1_1_U2                              |     |        | mul_ln32    | mul | auto      | 0       |
+|    mul_6ns_8ns_13_1_1_U4                              |     |        | mul_ln33    | mul | auto      | 0       |
+|    add_ln33_fu_383_p2                                 |     |        | add_ln33    | add | fabric    | 0       |
+|  + sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4 | 1   |        |             |     |           |         |
+|    add_ln40_fu_937_p2                                 |     |        | add_ln40    | add | fabric    | 0       |
+|    add_ln40_2_fu_963_p2                               |     |        | add_ln40_2  | add | fabric    | 0       |
+|    add_ln4042_fu_969_p2                               |     |        | add_ln4042  | add | fabric    | 0       |
+|    mac_muladd_6ns_6ns_6ns_12_4_1_U46                  | 1   |        | mul_ln51    | mul | dsp_slice | 3       |
+|    mul_6ns_8ns_13_1_1_U33                             |     |        | mul_ln40    | mul | auto      | 0       |
+|    add_ln45_1_fu_1086_p2                              |     |        | add_ln45_1  | add | fabric    | 0       |
+|    add_ln40_1_fu_1092_p2                              |     |        | add_ln40_1  | add | fabric    | 0       |
+|    mac_muladd_6ns_6ns_6ns_12_4_1_U46                  | 1   |        | add_ln51    | add | dsp_slice | 3       |
+|    add_ln41_fu_997_p2                                 |     |        | add_ln41    | add | fabric    | 0       |
+|    mul_6ns_8ns_13_1_1_U34                             |     |        | mul_ln41    | mul | auto      | 0       |
+|    add_ln41_1_fu_1120_p2                              |     |        | add_ln41_1  | add | fabric    | 0       |
+|    mul_6ns_8ns_13_1_1_U35                             |     |        | mul_ln45    | mul | auto      | 0       |
+|    add_ln45_2_fu_1157_p2                              |     |        | add_ln45_2  | add | fabric    | 0       |
+|    add_ln45_3_fu_1163_p2                              |     |        | add_ln45_3  | add | fabric    | 0       |
+|    mul_6ns_8ns_13_1_1_U36                             |     |        | mul_ln45_1  | mul | auto      | 0       |
+|    add_ln45_4_fu_1206_p2                              |     |        | add_ln45_4  | add | fabric    | 0       |
+|    add_ln45_5_fu_1225_p2                              |     |        | add_ln45_5  | add | fabric    | 0       |
+|    mul_6ns_8ns_13_1_1_U37                             |     |        | mul_ln45_2  | mul | auto      | 0       |
+|    add_ln45_6_fu_1267_p2                              |     |        | add_ln45_6  | add | fabric    | 0       |
+|    add_ln45_7_fu_1286_p2                              |     |        | add_ln45_7  | add | fabric    | 0       |
+|    mul_6ns_8ns_13_1_1_U32                             |     |        | mul_ln42    | mul | auto      | 0       |
+|    add_ln45_8_fu_1315_p2                              |     |        | add_ln45_8  | add | fabric    | 0       |
+|    add_ln45_9_fu_1321_p2                              |     |        | add_ln45_9  | add | fabric    | 0       |
+|    add_ln45_10_fu_1340_p2                             |     |        | add_ln45_10 | add | fabric    | 0       |
+|    add_ln45_11_fu_1359_p2                             |     |        | add_ln45_11 | add | fabric    | 0       |
+|    tmp2_fu_1523_p2                                    |     |        | tmp2        | sub | fabric    | 0       |
+|    sub_ln45_fu_1541_p2                                |     |        | sub_ln45    | sub | fabric    | 0       |
+|    tmp_fu_1574_p2                                     |     |        | tmp         | sub | fabric    | 0       |
+|    add_ln46_fu_1592_p2                                |     |        | add_ln46    | add | fabric    | 0       |
+|    sub_ln46_fu_1602_p2                                |     |        | sub_ln46    | sub | fabric    | 0       |
+|    add_ln45_fu_1635_p2                                |     |        | add_ln45    | add | fabric    | 0       |
+|    sub_ln49_fu_1681_p2                                |     |        | sub_ln49    | sub | fabric    | 0       |
+|    sub_ln49_1_fu_1707_p2                              |     |        | sub_ln49_1  | sub | fabric    | 0       |
+|    add_ln49_fu_1725_p2                                |     |        | add_ln49    | add | fabric    | 0       |
+|    magnitude_fu_1731_p2                               |     |        | magnitude   | add | fabric    | 0       |
+|  + sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8 | 1   |        |             |     |           |         |
+|    add_ln56_1_fu_129_p2                               |     |        | add_ln56_1  | add | fabric    | 0       |
+|    add_ln56_fu_141_p2                                 |     |        | add_ln56    | add | fabric    | 0       |
+|    mac_muladd_6ns_6ns_6ns_12_4_1_U61                  | 1   |        | mul_ln58    | mul | dsp_slice | 3       |
+|    mac_muladd_6ns_6ns_6ns_12_4_1_U61                  | 1   |        | add_ln58    | add | dsp_slice | 3       |
+|    add_ln57_fu_179_p2                                 |     |        | add_ln57    | add | fabric    | 0       |
++-------------------------------------------------------+-----+--------+-------------+-----+-----------+---------+
 
 
 ================================================================
 == Storage Report
 ================================================================
-+---------------+--------------+------+------+------+--------+-----------+------+---------+------------------+
-| Name          | Usage        | Type | BRAM | URAM | Pragma | Variable  | Impl | Latency | Bitwidth, Depth, |
-|               |              |      |      |      |        |           |      |         | Banks            |
-+---------------+--------------+------+------+------+--------+-----------+------+---------+------------------+
-| + sobel_hls   |              |      | 128  | 0    |        |           |      |         |                  |
-|   frame_U     | rom_np array |      | 1    |      |        | frame     | auto | 1       | 8, 1376, 1       |
-|   frame_1_U   | rom_np array |      | 1    |      |        | frame_1   | auto | 1       | 8, 1376, 1       |
-|   frame_2_U   | rom_np array |      | 1    |      |        | frame_2   | auto | 1       | 8, 1376, 1       |
-|   frame_3_U   | rom_np array |      | 1    |      |        | frame_3   | auto | 1       | 8, 1376, 1       |
-|   frame_4_U   | rom_np array |      | 1    |      |        | frame_4   | auto | 1       | 8, 1376, 1       |
-|   frame_5_U   | rom_np array |      | 1    |      |        | frame_5   | auto | 1       | 8, 1376, 1       |
-|   frame_6_U   | rom_np array |      | 1    |      |        | frame_6   | auto | 1       | 8, 1376, 1       |
-|   frame_7_U   | rom_np array |      | 1    |      |        | frame_7   | auto | 1       | 8, 1376, 1       |
-|   frame_8_U   | rom_np array |      | 1    |      |        | frame_8   | auto | 1       | 8, 1376, 1       |
-|   frame_9_U   | rom_np array |      | 1    |      |        | frame_9   | auto | 1       | 8, 1376, 1       |
-|   frame_10_U  | rom_np array |      | 1    |      |        | frame_10  | auto | 1       | 8, 1376, 1       |
-|   frame_11_U  | rom_np array |      | 1    |      |        | frame_11  | auto | 1       | 8, 1376, 1       |
-|   frame_12_U  | rom_np array |      | 1    |      |        | frame_12  | auto | 1       | 8, 1376, 1       |
-|   frame_13_U  | rom_np array |      | 1    |      |        | frame_13  | auto | 1       | 8, 1376, 1       |
-|   frame_14_U  | rom_np array |      | 1    |      |        | frame_14  | auto | 1       | 8, 1376, 1       |
-|   frame_15_U  | rom_np array |      | 1    |      |        | frame_15  | auto | 1       | 8, 1376, 1       |
-|   frame_16_U  | rom_np array |      | 1    |      |        | frame_16  | auto | 1       | 8, 1376, 1       |
-|   frame_17_U  | rom_np array |      | 1    |      |        | frame_17  | auto | 1       | 8, 1376, 1       |
-|   frame_18_U  | rom_np array |      | 1    |      |        | frame_18  | auto | 1       | 8, 1376, 1       |
-|   frame_19_U  | rom_np array |      | 1    |      |        | frame_19  | auto | 1       | 8, 1376, 1       |
-|   frame_20_U  | rom_np array |      | 1    |      |        | frame_20  | auto | 1       | 8, 1376, 1       |
-|   frame_21_U  | rom_np array |      | 1    |      |        | frame_21  | auto | 1       | 8, 1376, 1       |
-|   frame_22_U  | rom_np array |      | 1    |      |        | frame_22  | auto | 1       | 8, 1376, 1       |
-|   frame_23_U  | rom_np array |      | 1    |      |        | frame_23  | auto | 1       | 8, 1376, 1       |
-|   frame_24_U  | rom_np array |      | 1    |      |        | frame_24  | auto | 1       | 8, 1376, 1       |
-|   frame_25_U  | rom_np array |      | 1    |      |        | frame_25  | auto | 1       | 8, 1376, 1       |
-|   frame_26_U  | rom_np array |      | 1    |      |        | frame_26  | auto | 1       | 8, 1376, 1       |
-|   frame_27_U  | rom_np array |      | 1    |      |        | frame_27  | auto | 1       | 8, 1376, 1       |
-|   frame_28_U  | rom_np array |      | 1    |      |        | frame_28  | auto | 1       | 8, 1376, 1       |
-|   frame_29_U  | rom_np array |      | 1    |      |        | frame_29  | auto | 1       | 8, 1376, 1       |
-|   frame_30_U  | rom_np array |      | 1    |      |        | frame_30  | auto | 1       | 8, 1376, 1       |
-|   frame_31_U  | rom_np array |      | 1    |      |        | frame_31  | auto | 1       | 8, 1376, 1       |
-|   frame_32_U  | rom_np array |      | 1    |      |        | frame_32  | auto | 1       | 8, 1376, 1       |
-|   frame_33_U  | rom_np array |      | 1    |      |        | frame_33  | auto | 1       | 8, 1376, 1       |
-|   frame_34_U  | rom_np array |      | 1    |      |        | frame_34  | auto | 1       | 8, 1376, 1       |
-|   frame_35_U  | rom_np array |      | 1    |      |        | frame_35  | auto | 1       | 8, 1376, 1       |
-|   frame_36_U  | rom_np array |      | 1    |      |        | frame_36  | auto | 1       | 8, 1376, 1       |
-|   frame_37_U  | rom_np array |      | 1    |      |        | frame_37  | auto | 1       | 8, 1376, 1       |
-|   frame_38_U  | rom_np array |      | 1    |      |        | frame_38  | auto | 1       | 8, 1376, 1       |
-|   frame_39_U  | rom_np array |      | 1    |      |        | frame_39  | auto | 1       | 8, 1376, 1       |
-|   frame_40_U  | rom_np array |      | 1    |      |        | frame_40  | auto | 1       | 8, 1376, 1       |
-|   frame_41_U  | rom_np array |      | 1    |      |        | frame_41  | auto | 1       | 8, 1376, 1       |
-|   frame_42_U  | rom_np array |      | 1    |      |        | frame_42  | auto | 1       | 8, 1376, 1       |
-|   frame_43_U  | rom_np array |      | 1    |      |        | frame_43  | auto | 1       | 8, 1376, 1       |
-|   frame_44_U  | rom_np array |      | 1    |      |        | frame_44  | auto | 1       | 8, 1376, 1       |
-|   frame_45_U  | rom_np array |      | 1    |      |        | frame_45  | auto | 1       | 8, 1376, 1       |
-|   frame_46_U  | rom_np array |      | 1    |      |        | frame_46  | auto | 1       | 8, 1376, 1       |
-|   frame_47_U  | rom_np array |      | 1    |      |        | frame_47  | auto | 1       | 8, 1376, 1       |
-|   output_U    | ram_1p array |      | 2    |      |        | output    | auto | 1       | 8, 4096, 1       |
-|   output_1_U  | ram_1p array |      | 2    |      |        | output_1  | auto | 1       | 8, 4096, 1       |
-|   output_2_U  | ram_1p array |      | 2    |      |        | output_2  | auto | 1       | 8, 4096, 1       |
-|   output_3_U  | ram_1p array |      | 2    |      |        | output_3  | auto | 1       | 8, 4096, 1       |
-|   output_4_U  | ram_1p array |      | 2    |      |        | output_4  | auto | 1       | 8, 4096, 1       |
-|   output_5_U  | ram_1p array |      | 2    |      |        | output_5  | auto | 1       | 8, 4096, 1       |
-|   output_6_U  | ram_1p array |      | 2    |      |        | output_6  | auto | 1       | 8, 4096, 1       |
-|   output_7_U  | ram_1p array |      | 2    |      |        | output_7  | auto | 1       | 8, 4096, 1       |
-|   output_8_U  | ram_1p array |      | 2    |      |        | output_8  | auto | 1       | 8, 4096, 1       |
-|   output_9_U  | ram_1p array |      | 2    |      |        | output_9  | auto | 1       | 8, 4096, 1       |
-|   output_10_U | ram_1p array |      | 2    |      |        | output_10 | auto | 1       | 8, 4096, 1       |
-|   output_11_U | ram_1p array |      | 2    |      |        | output_11 | auto | 1       | 8, 4096, 1       |
-|   output_12_U | ram_1p array |      | 2    |      |        | output_12 | auto | 1       | 8, 4096, 1       |
-|   output_13_U | ram_1p array |      | 2    |      |        | output_13 | auto | 1       | 8, 4096, 1       |
-|   output_14_U | ram_1p array |      | 2    |      |        | output_14 | auto | 1       | 8, 4096, 1       |
-|   output_15_U | ram_1p array |      | 2    |      |        | output_15 | auto | 1       | 8, 4096, 1       |
-+---------------+--------------+------+------+------+--------+-----------+------+---------+------------------+
++-------------+--------------+------+------+------+--------+----------+------+---------+------------------+
+| Name        | Usage        | Type | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|             |              |      |      |      |        |          |      |         | Banks            |
++-------------+--------------+------+------+------+--------+----------+------+---------+------------------+
+| + sobel_hls |              |      | 11   | 0    |        |          |      |         |                  |
+|   frame_U   | ram_1p array |      | 1    |      |        | frame    | auto | 1       | 8, 289, 1        |
+|   frame_1_U | ram_1p array |      | 1    |      |        | frame_1  | auto | 1       | 8, 289, 1        |
+|   frame_2_U | ram_1p array |      | 1    |      |        | frame_2  | auto | 1       | 8, 289, 1        |
+|   frame_3_U | ram_1p array |      | 1    |      |        | frame_3  | auto | 1       | 8, 289, 1        |
+|   frame_4_U | ram_1p array |      | 1    |      |        | frame_4  | auto | 1       | 8, 289, 1        |
+|   frame_5_U | ram_1p array |      | 1    |      |        | frame_5  | auto | 1       | 8, 289, 1        |
+|   frame_6_U | ram_1p array |      | 1    |      |        | frame_6  | auto | 1       | 8, 289, 1        |
+|   frame_7_U | ram_1p array |      | 1    |      |        | frame_7  | auto | 1       | 8, 289, 1        |
+|   frame_8_U | ram_1p array |      | 1    |      |        | frame_8  | auto | 1       | 8, 289, 1        |
+|   output_U  | ram_1p array |      | 2    |      |        | output   | auto | 1       | 8, 2500, 1       |
++-------------+--------------+------+------+------+--------+----------+------+---------+------------------+
 
 
 ================================================================
 == Pragma Report
 ================================================================
 * Valid Pragma Syntax
-+-----------------+---------------------------------------+----------------------------------------------+
-| Type            | Options                               | Location                                     |
-+-----------------+---------------------------------------+----------------------------------------------+
-| interface       | ap_ctrl_none port=return              | ../myip_v1_0_HLS.cpp:13 in sobel_hls, return |
-| interface       | axis port=S_AXIS                      | ../myip_v1_0_HLS.cpp:14 in sobel_hls, S_AXIS |
-| interface       | axis port=M_AXIS                      | ../myip_v1_0_HLS.cpp:15 in sobel_hls, M_AXIS |
-| array_partition | variable=frame block factor=16 dim=2  | ../myip_v1_0_HLS.cpp:22 in sobel_hls, frame  |
-| array_partition | variable=output block factor=16 dim=2 | ../myip_v1_0_HLS.cpp:23 in sobel_hls, output |
-+-----------------+---------------------------------------+----------------------------------------------+
++-----------+--------------------------+----------------------------------------------+
+| Type      | Options                  | Location                                     |
++-----------+--------------------------+----------------------------------------------+
+| interface | ap_ctrl_none port=return | ../myip_v1_0_HLS.cpp:13 in sobel_hls, return |
+| interface | axis port=S_AXIS         | ../myip_v1_0_HLS.cpp:14 in sobel_hls, S_AXIS |
+| interface | axis port=M_AXIS         | ../myip_v1_0_HLS.cpp:15 in sobel_hls, M_AXIS |
++-----------+--------------------------+----------------------------------------------+
 
 

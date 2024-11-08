@@ -100,9 +100,9 @@ set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/w
 set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0.xdc]
 set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_sobel_hls_0_0/constraints/sobel_hls_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_sobel_hls_0_0/constraints/sobel_hls_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }

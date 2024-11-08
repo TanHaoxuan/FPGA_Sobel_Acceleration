@@ -1,0 +1,216 @@
+INFO: [v++ 60-1548] Creating build summary session with primary output D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls\sobel_hls.hlscompile_summary, at 11/08/24 20:56:12
+INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls -config D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg -cmdlineconfig D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/config.cmdline
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source D:/Program/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'D:/Program/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user '96160' on host 'thx_hp' (Windows NT_amd64 version 6.2) on Fri Nov 08 20:56:14 +0800 2024
+INFO: [HLS 200-10] In directory 'D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS'
+INFO: [HLS 200-1909] Reading HLS ini file D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg
+INFO: [HLS 200-1909] Reading HLS ini file D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/config.cmdline
+INFO: [HLS 200-2005] Using work_dir D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls 
+INFO: [HLS 200-1510] Running: open_project D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls -diskless 
+INFO: [HLS 200-1510] Running: open_solution hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: apply_ini D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp' at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/test_myip_v1_0_HLS-1.cpp' at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/test_myip_v1_0_HLS-1.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=sobel_hls' at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg(10)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg(5)
+INFO: [HLS 200-1510] Running: apply_ini D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/config.cmdline
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.154 seconds; current allocated memory: 89.078 MB.
+INFO: [HLS 200-10] Analyzing design file 'D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.467 seconds; current allocated memory: 92.199 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 387 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 189 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 147 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 137 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 137 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 137 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 137 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 137 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 137 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 162 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 157 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 171 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 555 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 423 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 415 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 434 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-376] automatically set the pipeline for Loop< unknown> at  
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_33_2> at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:33:26 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_41_4> at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:41:26 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_57_8> at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:57:26 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_43_5' is marked as complete unroll implied by the pipeline pragma (D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:43:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_44_6' is marked as complete unroll implied by the pipeline pragma (D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:44:34)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_43_5' (D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:43:30) in function 'sobel_hls' completely with a factor of 3 (D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:12:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_44_6' (D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:44:34) in function 'sobel_hls' completely with a factor of 3 (D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:12:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'frame' due to pipeline pragma (D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'frame' due to pipeline pragma (D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16)
+INFO: [HLS 214-248] Applying array_partition to 'frame': Cyclic partitioning with factor 3 on dimension 1. Cyclic partitioning with factor 3 on dimension 2. (D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:19:16)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.392 seconds; current allocated memory: 93.957 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 93.957 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.032 seconds; current allocated memory: 100.098 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.028 seconds; current allocated memory: 102.086 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.124 seconds; current allocated memory: 125.137 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_32_1'(D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:32:22) and 'VITIS_LOOP_33_2'(D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:33:26) in function 'sobel_hls' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_40_3'(D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:40:22) and 'VITIS_LOOP_41_4'(D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:41:26) in function 'sobel_hls' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_56_7'(D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:56:22) and 'VITIS_LOOP_57_8'(D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:57:26) in function 'sobel_hls' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_32_1' (D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:32:22) in function 'sobel_hls'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_40_3' (D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:40:22) in function 'sobel_hls'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_56_7' (D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp:56:22) in function 'sobel_hls'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.835 seconds; current allocated memory: 155.258 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sobel_hls' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sobel_hls_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.118 seconds; current allocated memory: 159.836 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 161.441 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_32_1_VITIS_LOOP_33_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 11, loop 'VITIS_LOOP_32_1_VITIS_LOOP_33_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 162.312 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 162.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln51) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_40_3_VITIS_LOOP_41_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 14, loop 'VITIS_LOOP_40_3_VITIS_LOOP_41_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.261 seconds; current allocated memory: 165.953 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.091 seconds; current allocated memory: 166.141 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln58) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_56_7_VITIS_LOOP_57_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_56_7_VITIS_LOOP_57_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.121 seconds; current allocated memory: 166.254 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 166.402 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sobel_hls' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 166.660 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 166.770 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sobel_hls_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sobel_hls_Pipeline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.053 seconds; current allocated memory: 168.270 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2' pipeline 'VITIS_LOOP_32_1_VITIS_LOOP_33_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_3ns_2_11_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 170.758 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4' pipeline 'VITIS_LOOP_40_3_VITIS_LOOP_41_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_7ns_7ns_7ns_14_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_8_1_1': 17 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_3ns_2_11_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.632 seconds; current allocated memory: 175.145 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8' pipeline 'VITIS_LOOP_56_7_VITIS_LOOP_57_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_7ns_7ns_7ns_14_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.558 seconds; current allocated memory: 180.598 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sobel_hls' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_hls/S_AXIS_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_hls/S_AXIS_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_hls/S_AXIS_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_hls/S_AXIS_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_hls/M_AXIS_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_hls/M_AXIS_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_hls/M_AXIS_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_hls/M_AXIS_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'sobel_hls' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sobel_hls'.
+INFO: [RTMG 210-278] Implementing memory 'sobel_hls_frame_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'sobel_hls_output_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.143 seconds; current allocated memory: 181.445 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.395 seconds; current allocated memory: 185.562 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.557 seconds; current allocated memory: 188.953 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for sobel_hls.
+INFO: [VLOG 209-307] Generating Verilog RTL for sobel_hls.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 150.59 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 21.624 seconds; current allocated memory: 100.562 MB.
+INFO: [HLS 200-1510] Running: close_project 
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 23.044 seconds; peak allocated memory: 189.496 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Fri Nov  8 20:56:37 2024...
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 27s

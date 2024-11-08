@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:sobel_hls:1.0
-// IP Revision: 2113812505
+// IP Revision: 2113814177
 
 (* X_CORE_INFO = "sobel_hls,Vivado 2023.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_sobel_hls_0_0,sobel_hls,{}" *)
-(* CORE_GENERATION_INFO = "design_1_sobel_hls_0_0,sobel_hls,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=sobel_hls,x_ipVersion=1.0,x_ipCoreRevision=2113812505,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_sobel_hls_0_0,sobel_hls,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=sobel_hls,x_ipVersion=1.0,x_ipCoreRevision=2113814177,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_sobel_hls_0_0 (

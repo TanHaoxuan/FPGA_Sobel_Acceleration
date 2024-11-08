@@ -1,0 +1,161 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls\sobel_hls.hlsrun_csim_summary, at 11/08/24 19:53:26
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls -config D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg -cmdlineconfig D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/config.cmdline
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source D:/Program/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'D:/Program/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user '96160' on host 'thx_hp' (Windows NT_amd64 version 6.2) on Fri Nov 08 19:53:28 +0800 2024
+INFO: [HLS 200-10] In directory 'D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS'
+INFO: [HLS 200-1909] Reading HLS ini file D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg
+INFO: [HLS 200-1909] Reading HLS ini file D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/config.cmdline
+INFO: [HLS 200-2005] Using work_dir D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls 
+INFO: [HLS 200-1510] Running: open_project D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls -diskless 
+INFO: [HLS 200-1510] Running: open_solution hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: apply_ini D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp' at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/test_myip_v1_0_HLS-1.cpp' at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/test_myip_v1_0_HLS-1.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=sobel_hls' at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg(10)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg(5)
+INFO: [HLS 200-1510] Running: apply_ini D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/config.cmdline
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../test_myip_v1_0_HLS-1.cpp in debug mode
+   Compiling ../../../../../myip_v1_0_HLS.cpp in debug mode
+   Generating csim.exe
+In file included from D:/Program/Xilinx/Vitis_HLS/2023.2/include/floating_point_v7_1_bitacc_cmodel.h:150:0,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/hls_fpo.h:140,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/etc/hls_half_fpo.h:19,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/hls_half.h:26,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/etc/ap_private.h:52,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/etc/ap_common.h:666,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/ap_int.h:10,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:15,
+                 from ../../../../../test_myip_v1_0_HLS-1.cpp:4:
+D:/Program/Xilinx/Vitis_HLS/2023.2/include/gmp.h:58:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/Program/Xilinx/Vitis_HLS/2023.2/include/hls_fpo.h:140:0,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/etc/hls_half_fpo.h:19,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/hls_half.h:26,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/etc/ap_private.h:52,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/etc/ap_common.h:666,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/ap_int.h:10,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:15,
+                 from ../../../../../test_myip_v1_0_HLS-1.cpp:4:
+D:/Program/Xilinx/Vitis_HLS/2023.2/include/floating_point_v7_1_bitacc_cmodel.h:142:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from D:/Program/Xilinx/Vitis_HLS/2023.2/include/floating_point_v7_1_bitacc_cmodel.h:150:0,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/hls_fpo.h:140,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/etc/hls_half_fpo.h:19,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/hls_half.h:26,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/etc/ap_private.h:52,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/etc/ap_common.h:666,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/ap_int.h:10,
+                 from ../../../../../myip_v1_0_HLS.cpp:2:
+D:/Program/Xilinx/Vitis_HLS/2023.2/include/gmp.h:58:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/Program/Xilinx/Vitis_HLS/2023.2/include/hls_fpo.h:140:0,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/etc/hls_half_fpo.h:19,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/hls_half.h:26,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/etc/ap_private.h:52,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/etc/ap_common.h:666,
+                 from D:/Program/Xilinx/Vitis_HLS/2023.2/include/ap_int.h:10,
+                 from ../../../../../myip_v1_0_HLS.cpp:2:
+D:/Program/Xilinx/Vitis_HLS/2023.2/include/floating_point_v7_1_bitacc_cmodel.h:142:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+Transmitting Image...
+Receiving Image...
+Checking results...
+Error: Pixel 0 - Expected 16, Got 0
+Error: Pixel 1 - Expected 208, Got 0
+Error: Pixel 2 - Expected 32, Got 0
+Error: Pixel 3 - Expected 8, Got 0
+Error: Pixel 4 - Expected 248, Got 0
+Error: Pixel 5 - Expected 127, Got 0
+Error: Pixel 18 - Expected 128, Got 0
+Error: Pixel 24 - Expected 32, Got 0
+Error: Pixel 25 - Expected 225, Got 0
+Error: Pixel 26 - Expected 83, Got 0
+Error: Pixel 27 - Expected 64, Got 0
+Error: Pixel 200 - Expected 6, Got 0
+Error: Pixel 249 - Expected 219, Got 0
+Error: Pixel 250 - Expected 115, Got 0
+Error: Pixel 299 - Expected 64, Got 0
+Error: Pixel 349 - Expected 127, Got 0
+Error: Pixel 499 - Expected 64, Got 0
+Error: Pixel 800 - Expected 48, Got 0
+Error: Pixel 849 - Expected 229, Got 0
+Error: Pixel 850 - Expected 83, Got 0
+Error: Pixel 899 - Expected 8, Got 0
+Error: Pixel 900 - Expected 248, Got 0
+Error: Pixel 1000 - Expected 136, Got 0
+Error: Pixel 1049 - Expected 242, Got 0
+Error: Pixel 1050 - Expected 135, Got 0
+Error: Pixel 1200 - Expected 80, Got 0
+Error: Pixel 1249 - Expected 133, Got 0
+Error: Pixel 1250 - Expected 114, Got 0
+Error: Pixel 1400 - Expected 255, Got 0
+Error: Pixel 1499 - Expected 10, Got 0
+Error: Pixel 1500 - Expected 248, Got 0
+Error: Pixel 1699 - Expected 8, Got 0
+Error: Pixel 1700 - Expected 248, Got 0
+Error: Pixel 1749 - Expected 127, Got 0
+Error: Pixel 1800 - Expected 217, Got 0
+Error: Pixel 1849 - Expected 232, Got 0
+Error: Pixel 1850 - Expected 83, Got 0
+Error: Pixel 1899 - Expected 8, Got 0
+Error: Pixel 1900 - Expected 248, Got 0
+Error: Pixel 2000 - Expected 224, Got 0
+Error: Pixel 2200 - Expected 48, Got 0
+Error: Pixel 2249 - Expected 137, Got 0
+Error: Pixel 2250 - Expected 174, Got 0
+Error: Pixel 2400 - Expected 208, Got 0
+Error: Pixel 2456 - Expected 176, Got 0
+Error: Pixel 2457 - Expected 234, Got 0
+Error: Pixel 2458 - Expected 83, Got 0
+Error: Pixel 2459 - Expected 64, Got 0
+Error: Pixel 2466 - Expected 228, Got 0
+Error: Pixel 2467 - Expected 8, Got 0
+Error: Pixel 2468 - Expected 248, Got 0
+Error: Pixel 2469 - Expected 127, Got 0
+Error: Pixel 2480 - Expected 208, Got 0
+Error: Pixel 2481 - Expected 236, Got 0
+Error: Pixel 2482 - Expected 83, Got 0
+Error: Pixel 2483 - Expected 64, Got 0
+Error: Pixel 2488 - Expected 8, Got 0
+Test Failed
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 2500
+@E Simulation failed: Function 'main' returns nonzero value '1'.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 6.027 seconds; current allocated memory: 1.109 MB.
+INFO: [HLS 200-1510] Running: close_project 
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.377 seconds; peak allocated memory: 89.730 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Fri Nov  8 19:53:35 2024...

@@ -16,8 +16,8 @@
 `define AUTOTB_TOP_INST AESL_inst_apatb_sobel_hls_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
 `define AUTOTB_CLOCK_PERIOD_DIV2 5.00
-`define AUTOTB_II 195626
-`define AUTOTB_LATENCY 195625
+`define AUTOTB_II 9843
+`define AUTOTB_LATENCY 9842
 
 `define AESL_DEPTH_S_AXIS_V_data_V 1
 `define AESL_DEPTH_S_AXIS_V_keep_V 1
@@ -47,15 +47,15 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 195625;
-parameter LENGTH_M_AXIS_V_data_V = 65536;
-parameter LENGTH_M_AXIS_V_keep_V = 65536;
-parameter LENGTH_M_AXIS_V_last_V = 65536;
-parameter LENGTH_M_AXIS_V_strb_V = 65536;
-parameter LENGTH_S_AXIS_V_data_V = 65536;
-parameter LENGTH_S_AXIS_V_keep_V = 65536;
-parameter LENGTH_S_AXIS_V_last_V = 65536;
-parameter LENGTH_S_AXIS_V_strb_V = 65536;
+parameter LATENCY_ESTIMATION = 9842;
+parameter LENGTH_M_AXIS_V_data_V = 2500;
+parameter LENGTH_M_AXIS_V_keep_V = 2500;
+parameter LENGTH_M_AXIS_V_last_V = 2500;
+parameter LENGTH_M_AXIS_V_strb_V = 2500;
+parameter LENGTH_S_AXIS_V_data_V = 2500;
+parameter LENGTH_S_AXIS_V_keep_V = 2500;
+parameter LENGTH_S_AXIS_V_last_V = 2500;
+parameter LENGTH_S_AXIS_V_strb_V = 2500;
 
 task read_token;
     input integer fp;

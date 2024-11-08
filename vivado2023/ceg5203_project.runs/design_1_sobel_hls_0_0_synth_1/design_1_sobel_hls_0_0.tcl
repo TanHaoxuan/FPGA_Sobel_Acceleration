@@ -90,7 +90,7 @@ set_property ip_output_repo d:/Semester1/CEG5203/workspace/project-fpga/vivado20
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.srcs/sources_1/bd/design_1/ip/design_1_sobel_hls_0_0/design_1_sobel_hls_0_0.xci
+read_ip -quiet D:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.srcs/sources_1/bd/design_1/ip/design_1_sobel_hls_0_0/design_1_sobel_hls_0_0.xci
 set_property used_in_implementation false [get_files -all d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_sobel_hls_0_0/constraints/sobel_hls_ooc.xdc]
 
 OPTRACE "Adding files" END { }

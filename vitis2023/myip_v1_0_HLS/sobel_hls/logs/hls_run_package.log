@@ -1,4 +1,4 @@
-INFO: [vitis-run 60-1548] Creating build summary session with primary output D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls\sobel_hls.hlsrun_package_summary, at 11/07/24 18:25:25
+INFO: [vitis-run 60-1548] Creating build summary session with primary output D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls\sobel_hls.hlsrun_package_summary, at 11/08/24 22:17:40
 INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run package -work_dir D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls -config D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg -cmdlineconfig D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/config.cmdline
 ECHO 处于关闭状态。
 ECHO 处于关闭状态。
@@ -12,7 +12,7 @@ ECHO 处于关闭状态。
 
 source D:/Program/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running 'D:/Program/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user '96160' on host 'thx_hp' (Windows NT_amd64 version 6.2) on Thu Nov 07 18:25:28 +0800 2024
+INFO: [HLS 200-10] For user '96160' on host 'thx_hp' (Windows NT_amd64 version 6.2) on Fri Nov 08 22:17:43 +0800 2024
 INFO: [HLS 200-10] In directory 'D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS'
 INFO: [HLS 200-1909] Reading HLS ini file D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg
 INFO: [HLS 200-1909] Reading HLS ini file D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/config.cmdline
@@ -51,14 +51,14 @@ ECHO 处于关闭状态。
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source run_ippack.tcl -notrace
-ipx::create_core: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 459.035 ; gain = 175.020
+ipx::create_core: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 459.336 ; gain = 174.891
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Program/Xilinx/Vivado/2023.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Nov  7 18:25:41 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  8 22:17:56 2024...
 INFO: [HLS 200-802] Generated output file sobel_hls/sobel_hls.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 12.642 seconds; current allocated memory: 9.453 MB.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 11.886 seconds; current allocated memory: 8.676 MB.
 INFO: [HLS 200-1510] Running: close_project 
-INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 13.969 seconds; peak allocated memory: 98.184 MB.
-INFO: [Common 17-206] Exiting vitis_hls at Thu Nov  7 18:25:41 2024...
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 18s
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 13.24 seconds; peak allocated memory: 97.141 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Fri Nov  8 22:17:56 2024...
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 17s

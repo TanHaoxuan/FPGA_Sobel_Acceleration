@@ -133,7 +133,7 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir D:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.cache/wt [current_project]
   set_property parent.project_path D:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.xpr [current_project]
-  set_property ip_repo_paths d:/Semester1/CEG5203/workspace/project-fpga/vitis2023 [current_project]
+  set_property ip_repo_paths D:/Semester1/CEG5203/workspace/project-fpga/vitis2023 [current_project]
   update_ip_catalog
   set_property ip_output_repo D:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]

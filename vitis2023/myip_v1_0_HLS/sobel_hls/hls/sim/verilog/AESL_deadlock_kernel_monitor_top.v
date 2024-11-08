@@ -9,14 +9,14 @@ wire [2:0] inst_idle_sigs;
 wire [0:0] inst_block_sigs;
 wire kernel_block;
 
-assign axis_block_sigs[0] = ~AESL_inst_sobel_hls.grp_sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_312.S_AXIS_TDATA_blk_n;
-assign axis_block_sigs[1] = ~AESL_inst_sobel_hls.grp_sobel_hls_Pipeline_VITIS_LOOP_55_7_VITIS_LOOP_56_8_fu_440.M_AXIS_TDATA_blk_n;
+assign axis_block_sigs[0] = ~AESL_inst_sobel_hls.grp_sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_104.S_AXIS_TDATA_blk_n;
+assign axis_block_sigs[1] = ~AESL_inst_sobel_hls.grp_sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8_fu_139.M_AXIS_TDATA_blk_n;
 
 assign inst_block_sigs[0] = 1'b0;
 
 assign inst_idle_sigs[0] = 1'b0;
-assign inst_idle_sigs[1] = AESL_inst_sobel_hls.grp_sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_312.ap_idle;
-assign inst_idle_sigs[2] = AESL_inst_sobel_hls.grp_sobel_hls_Pipeline_VITIS_LOOP_55_7_VITIS_LOOP_56_8_fu_440.ap_idle;
+assign inst_idle_sigs[1] = AESL_inst_sobel_hls.grp_sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_104.ap_idle;
+assign inst_idle_sigs[2] = AESL_inst_sobel_hls.grp_sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8_fu_139.ap_idle;
 
 AESL_deadlock_idx0_monitor AESL_deadlock_idx0_monitor_U (
     .clock(kernel_monitor_clock),

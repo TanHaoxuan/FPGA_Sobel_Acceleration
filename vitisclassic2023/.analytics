@@ -89,3 +89,69 @@ timestamp=[2024-11-06 21:49:14], mode=BUILD, duration=0:00:00.390, duration_ms=3
 timestamp=[2024-11-06 21:52:47], mode=PLATFORM_GENERATION, duration=0:03:24.360, duration_ms=204360, data={name=ceg5203_project}
 timestamp=[2024-11-06 21:52:50], mode=BUILD, duration=0:00:02.824, duration_ms=2824, data={name=sobel_filter, configuration=Debug, clean_build=false}
 timestamp=[2024-11-06 21:58:48], mode=BUILD, duration=0:00:01.027, duration_ms=1027, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 20:08:28], mode=WORKBENCH_START, duration=0:00:06.922, duration_ms=6922, data={}
+timestamp=[2024-11-07 20:08:29], mode=WORKBENCH_UI_INIT, duration=0:00:00.681, duration_ms=681, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,ceg5203_project,sobel_filter,sobel_filter_system}
+timestamp=[2024-11-07 20:08:29], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.360, duration_ms=360, data={}
+timestamp=[2024-11-07 20:11:05], mode=PLATFORM_GENERATION, duration=0:00:19.305, duration_ms=19305, data={name=ceg5203_project}
+timestamp=[2024-11-07 20:11:05], mode=BUILD, duration=0:00:00.327, duration_ms=327, data={name=sobel_filter, configuration=Debug, clean_build=true}
+timestamp=[2024-11-07 20:15:53], mode=PLATFORM_GENERATION, duration=0:03:42.919, duration_ms=222919, data={name=ceg5203_project}
+timestamp=[2024-11-07 20:16:01], mode=BUILD, duration=0:00:01.140, duration_ms=1140, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 20:21:00], mode=BUILD, duration=0:00:01.515, duration_ms=1515, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 20:23:08], mode=PLATFORM_GENERATION, duration=0:00:19.410, duration_ms=19410, data={name=ceg5203_project}
+timestamp=[2024-11-07 20:23:08], mode=BUILD, duration=0:00:00.346, duration_ms=346, data={name=sobel_filter, configuration=Debug, clean_build=true}
+timestamp=[2024-11-07 20:23:09], mode=BUILD, duration=0:00:00.445, duration_ms=445, data={name=sobel_filter_system, configuration=Debug, clean_build=true}
+timestamp=[2024-11-07 20:26:23], mode=PLATFORM_GENERATION, duration=0:02:58.869, duration_ms=178869, data={name=ceg5203_project}
+timestamp=[2024-11-07 20:26:25], mode=BUILD, duration=0:00:02.369, duration_ms=2369, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 20:26:37], mode=BUILD, duration=0:00:09.956, duration_ms=9956, data={name=sobel_filter_system, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 20:33:58], mode=BUILD, duration=0:00:01.483, duration_ms=1483, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 20:35:51], mode=BUILD, duration=0:00:01.452, duration_ms=1452, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 20:36:02], mode=BUILD, duration=0:00:09.743, duration_ms=9743, data={name=sobel_filter_system, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 22:43:46], mode=BUILD, duration=0:00:01.748, duration_ms=1748, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 22:52:27], mode=BUILD, duration=0:00:01.444, duration_ms=1444, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 23:07:26], mode=BUILD, duration=0:00:00.645, duration_ms=645, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 23:08:41], mode=BUILD, duration=0:00:01.517, duration_ms=1517, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 23:09:50], mode=BUILD, duration=0:00:01.447, duration_ms=1447, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 23:14:34], mode=BUILD, duration=0:00:01.279, duration_ms=1279, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 23:16:55], mode=BUILD, duration=0:00:01.451, duration_ms=1451, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-07 23:20:25], mode=BUILD, duration=0:00:01.473, duration_ms=1473, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 13:02:03], mode=PLATFORM_GENERATION, duration=0:00:19.453, duration_ms=19453, data={name=ceg5203_project}
+timestamp=[2024-11-08 13:02:03], mode=BUILD, duration=0:00:00.343, duration_ms=343, data={name=sobel_filter, configuration=Debug, clean_build=true}
+timestamp=[2024-11-08 13:06:07], mode=PLATFORM_GENERATION, duration=0:03:59.148, duration_ms=239148, data={name=ceg5203_project}
+timestamp=[2024-11-08 13:06:18], mode=BUILD, duration=0:00:02.346, duration_ms=2346, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 13:06:41], mode=PLATFORM_GENERATION, duration=0:00:22.382, duration_ms=22382, data={name=ceg5203_project}
+timestamp=[2024-11-08 13:06:42], mode=BUILD, duration=0:00:00.459, duration_ms=459, data={name=sobel_filter, configuration=Debug, clean_build=true}
+timestamp=[2024-11-08 13:10:18], mode=PLATFORM_GENERATION, duration=0:03:35.591, duration_ms=215591, data={name=ceg5203_project}
+timestamp=[2024-11-08 13:10:21], mode=BUILD, duration=0:00:03.093, duration_ms=3093, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 13:32:06], mode=BUILD, duration=0:00:01.487, duration_ms=1487, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 13:32:29], mode=BUILD, duration=0:00:00.338, duration_ms=338, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 13:32:49], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 13:35:34], mode=BUILD, duration=0:00:01.633, duration_ms=1633, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 13:40:00], mode=BUILD, duration=0:00:00.324, duration_ms=324, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 13:40:05], mode=BUILD, duration=0:00:00.339, duration_ms=339, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 13:40:25], mode=BUILD, duration=0:00:01.579, duration_ms=1579, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 14:08:42], mode=PLATFORM_GENERATION, duration=0:00:18.947, duration_ms=18947, data={name=ceg5203_project}
+timestamp=[2024-11-08 14:08:42], mode=BUILD, duration=0:00:00.329, duration_ms=329, data={name=sobel_filter, configuration=Debug, clean_build=true}
+timestamp=[2024-11-08 14:12:47], mode=PLATFORM_GENERATION, duration=0:03:59.332, duration_ms=239332, data={name=ceg5203_project}
+timestamp=[2024-11-08 14:13:01], mode=BUILD, duration=0:00:02.379, duration_ms=2379, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 17:25:06], mode=PLATFORM_GENERATION, duration=0:00:18.935, duration_ms=18935, data={name=ceg5203_project}
+timestamp=[2024-11-08 17:25:06], mode=BUILD, duration=0:00:00.330, duration_ms=330, data={name=sobel_filter, configuration=Debug, clean_build=true}
+timestamp=[2024-11-08 17:29:13], mode=PLATFORM_GENERATION, duration=0:04:03.019, duration_ms=243019, data={name=ceg5203_project}
+timestamp=[2024-11-08 17:29:23], mode=BUILD, duration=0:00:02.219, duration_ms=2219, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 17:37:23], mode=BUILD, duration=0:00:01.512, duration_ms=1512, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 17:45:46], mode=BUILD, duration=0:00:01.536, duration_ms=1536, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 17:48:18], mode=BUILD, duration=0:00:01.520, duration_ms=1520, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 17:51:05], mode=BUILD, duration=0:00:01.526, duration_ms=1526, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 17:59:21], mode=BUILD, duration=0:00:01.549, duration_ms=1549, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 18:09:46], mode=BUILD, duration=0:00:01.514, duration_ms=1514, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 18:15:55], mode=BUILD, duration=0:00:01.535, duration_ms=1535, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 18:17:20], mode=BUILD, duration=0:00:01.479, duration_ms=1479, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 18:44:09], mode=BUILD, duration=0:00:01.455, duration_ms=1455, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 21:46:20], mode=WORKBENCH_START, duration=0:00:07.442, duration_ms=7442, data={}
+timestamp=[2024-11-08 21:46:21], mode=WORKBENCH_UI_INIT, duration=0:00:00.647, duration_ms=647, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,ceg5203_project,sobel_filter,sobel_filter_system}
+timestamp=[2024-11-08 21:46:21], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.446, duration_ms=446, data={}
+timestamp=[2024-11-08 21:50:13], mode=PLATFORM_GENERATION, duration=0:00:51.394, duration_ms=51394, data={name=ceg5203_project}
+timestamp=[2024-11-08 21:50:21], mode=BUILD, duration=0:00:02.173, duration_ms=2173, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 22:29:28], mode=PLATFORM_GENERATION, duration=0:00:47.886, duration_ms=47886, data={name=ceg5203_project}
+timestamp=[2024-11-08 22:29:37], mode=BUILD, duration=0:00:02.017, duration_ms=2017, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 22:32:31], mode=BUILD, duration=0:00:01.487, duration_ms=1487, data={name=sobel_filter, configuration=Debug, clean_build=false}
+timestamp=[2024-11-08 22:37:46], mode=BUILD, duration=0:00:01.498, duration_ms=1498, data={name=sobel_filter, configuration=Debug, clean_build=false}

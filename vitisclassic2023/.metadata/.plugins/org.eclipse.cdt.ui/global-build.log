@@ -1,7 +1,32 @@
 Nothing to build in platform 'ceg5203_project'
 
-21:58:47 **** Incremental Build of configuration Debug for project sobel_filter ****
+22:37:45 **** Incremental Build of configuration Debug for project sobel_filter ****
 make all 
+'Building file: ../src/sobel.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sobel.o" -ID:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/standalone_domain/bspinclude/include -MMD -MP -MF"src/sobel.d" -MT"src/sobel.o" -o "src/sobel.o" "../src/sobel.c"
+../src/sobel.c:26: warning: "UART_DEVICE_ID" redefined
+   26 | #define UART_DEVICE_ID          XPAR_XUARTPS_0_DEVICE_ID
+      | 
+In file included from ../src/platform.h:10,
+                 from ../src/sobel.c:7:
+../src/platform_config.h:5: note: this is the location of the previous definition
+    5 | #define UART_DEVICE_ID 0
+      | 
+In file included from D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/standalone_domain/bspinclude/include/xuartps.h:169,
+                 from ../src/sobel.c:3:
+../src/sobel.c: In function 'applySobelFilter_hard':
+D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/standalone_domain/bspinclude/include/xstatus.h:45:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   45 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/sobel.c:361:16: note: in expansion of macro 'XST_FAILURE'
+  361 |         return XST_FAILURE;
+      |                ^~~~~~~~~~~
+../src/sobel.c:315:6: note: declared here
+  315 | void applySobelFilter_hard(unsigned char **input, unsigned char **output, unsigned height, unsigned width) {
+      |      ^~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/sobel.c'
+' '
 'Building target: sobel_filter.elf'
 'Invoking: ARM v8 gcc linker'
 aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/standalone_domain/bsplib/lib -o "sobel_filter.elf"  ./src/platform.o ./src/sobel.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
@@ -10,6 +35,6 @@ aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/Semester1/CEG5203/workspa
 'Invoking: ARM v8 Print Size'
 aarch64-none-elf-size sobel_filter.elf  |tee "sobel_filter.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  98084	   4736	4207036	4309856	 41c360	sobel_filter.elf
+  49558	   4344	4207242	4261144	 410518	sobel_filter.elf
 'Finished building: sobel_filter.elf.size'
 ' '

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:sobel_hls:1.0
-// IP Revision: 2113812505
+// IP Revision: 2113814177
 
 `timescale 1ns/1ps
 

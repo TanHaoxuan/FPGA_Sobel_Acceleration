@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Semester1/CEG5203/workspace/ceg5203assignment2/vivado2023/ceg5203_assignment2.runs/design_1_axi_fifo_mm_s_0_0_synth_1'
+HD_PWD='D:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.runs/design_1_axi_fifo_mm_s_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

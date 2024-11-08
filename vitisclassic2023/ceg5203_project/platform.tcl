@@ -24,3 +24,25 @@ platform clean
 platform generate
 platform clean
 platform generate
+platform active {ceg5203_project}
+platform config -updatehw {D:/Semester1/CEG5203/workspace/project-fpga/vivado2023/design_1_wrapper.xsa}
+platform clean
+platform generate
+platform clean
+platform generate
+platform config -updatehw {D:/Semester1/CEG5203/workspace/project-fpga/vivado2023/design_1_wrapper.xsa}
+platform clean
+platform generate
+platform clean
+platform generate
+platform config -updatehw {D:/Semester1/CEG5203/workspace/project-fpga/vivado2023/design_1_wrapper.xsa}
+platform clean
+platform generate
+platform config -updatehw {D:/Semester1/CEG5203/workspace/project-fpga/vivado2023/design_1_wrapper.xsa}
+platform clean
+platform generate
+platform active {ceg5203_project}
+platform config -updatehw {D:/Semester1/CEG5203/workspace/project-fpga/vivado2023/design_1_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {D:/Semester1/CEG5203/workspace/project-fpga/vivado2023/design_1_wrapper.xsa}
+platform generate -domains 
