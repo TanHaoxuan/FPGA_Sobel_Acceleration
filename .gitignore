@@ -1,1 +1,38 @@
-/data
+data/
+data/*.txt
+
+# Ignore Vivado and Vitis folders
+*.Xil/
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/
+*.xpr
+
+# Ignore backup and log files
+*.log
+*.jou
+*.backup.log
+
+# Ignore project-specific build artifacts in Vitis
+*.theia/
+logs/
+*.lock
+
+# Ignore compiled object files
+*.o
+*.xsa
+
+# General IDE and system files
+.metadata/
+.analytics/
+*.log
+*.tmp
+*.swp
+.DS_Store
+.idea/
+.vscode/
+

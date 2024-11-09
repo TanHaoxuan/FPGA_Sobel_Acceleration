@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sobel_hls'" level="0">
-<item name = "Date">Fri Nov  8 22:16:19 2024
+<item name = "Date">Sat Nov  9 10:51:41 2024
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">sobel_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 6.641 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 6.941 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">9842, 9842, 98.420 us, 98.420 us, 9843, 9843, no</column>
+<column name="">28602, 28602, 0.286 ms, 0.286 ms, 28603, 28603, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_sobel_hls_Pipeline_1_fu_98">sobel_hls_Pipeline_1, 2502, 2502, 25.020 us, 25.020 us, 2502, 2502, no</column>
-<column name="grp_sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_104">sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2, 2510, 2510, 25.100 us, 25.100 us, 2510, 2510, no</column>
-<column name="grp_sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4_fu_125">sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4, 2317, 2317, 23.170 us, 23.170 us, 2317, 2317, no</column>
-<column name="grp_sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8_fu_139">sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8, 2505, 2505, 25.050 us, 25.050 us, 2505, 2505, no</column>
+<column name="grp_sobel_hls_Pipeline_1_fu_1418">sobel_hls_Pipeline_1, 7227, 7227, 72.270 us, 72.270 us, 7227, 7227, no</column>
+<column name="grp_sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_1592">sobel_hls_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2, 7236, 7236, 72.360 us, 72.360 us, 7236, 7236, no</column>
+<column name="grp_sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4_fu_1859">sobel_hls_Pipeline_VITIS_LOOP_40_3_VITIS_LOOP_41_4, 6903, 6903, 69.030 us, 69.030 us, 6903, 6903, no</column>
+<column name="grp_sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8_fu_2201">sobel_hls_Pipeline_VITIS_LOOP_56_7_VITIS_LOOP_57_8, 7228, 7228, 72.280 us, 72.280 us, 7228, 7228, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

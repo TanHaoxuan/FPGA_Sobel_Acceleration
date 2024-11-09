@@ -12,9 +12,9 @@ module sobel_hls_output_RAM_AUTO_1R1W (
      
     reset, clk);
 
-parameter DataWidth = 8;
-parameter AddressWidth = 12;
-parameter AddressRange = 2500;
+parameter DataWidth = 1;
+parameter AddressWidth = 7;
+parameter AddressRange = 85;
  
 input[AddressWidth-1:0] address0;
 input ce0;

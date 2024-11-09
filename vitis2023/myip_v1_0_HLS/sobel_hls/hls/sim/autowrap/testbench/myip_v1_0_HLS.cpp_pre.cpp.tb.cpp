@@ -78350,11 +78350,11 @@ void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS)
 
 
 
-    unsigned char frame[50][50];
-    unsigned char output[50][50] = {0};
+    unsigned char frame[85][85];
+    unsigned char output[85][85] = {0};
 
-
-
+#pragma HLS array_partition variable=frame dim=2 complete
+#pragma HLS array_partition variable=output dim=2 complete
 
     AXIS_wLAST read_input, write_output;
 
@@ -78363,16 +78363,16 @@ void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS)
     int Gy[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
 
 
-    for (int i = 0; i < 50; i++) {
-        for (int j = 0; j < 50; j++) {
+    for (int i = 0; i < 85; i++) {
+        for (int j = 0; j < 85; j++) {
             read_input = S_AXIS.read();
             frame[i][j] = read_input.data;
         }
     }
 
 
-    for (int y = 1; y < 50 - 1; y++) {
-        for (int x = 1; x < 50 - 1; x++) {
+    for (int y = 1; y < 85 - 1; y++) {
+        for (int x = 1; x < 85 - 1; x++) {
             int px = 0, py = 0;
             for (int i = -1; i <= 1; i++) {
                 for (int j = -1; j <= 1; j++) {
@@ -78387,10 +78387,10 @@ void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS)
     }
 
 
-    for (int i = 0; i < 50; i++) {
-        for (int j = 0; j < 50; j++) {
+    for (int i = 0; i < 85; i++) {
+        for (int j = 0; j < 85; j++) {
             write_output.data = output[i][j];
-            write_output.last = (i == 50 - 1) && (j == 50 - 1);
+            write_output.last = (i == 85 - 1) && (j == 85 - 1);
             M_AXIS.write(write_output);
         }
     }

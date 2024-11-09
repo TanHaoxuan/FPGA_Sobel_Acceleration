@@ -52,7 +52,7 @@ Diagnostics:
     FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS.cpp'
     Replacements:    
       - FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp'
-        Offset:          1062232
+        Offset:          1062344
         Length:          0
         ReplacementText: 'VITIS_LOOP_32_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -61,7 +61,7 @@ Diagnostics:
     FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS.cpp'
     Replacements:    
       - FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp'
-        Offset:          1062271
+        Offset:          1062383
         Length:          0
         ReplacementText: 'VITIS_LOOP_33_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -70,7 +70,7 @@ Diagnostics:
     FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS.cpp'
     Replacements:    
       - FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp'
-        Offset:          1062407
+        Offset:          1062519
         Length:          0
         ReplacementText: 'VITIS_LOOP_40_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -79,7 +79,7 @@ Diagnostics:
     FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS.cpp'
     Replacements:    
       - FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp'
-        Offset:          1062450
+        Offset:          1062562
         Length:          0
         ReplacementText: 'VITIS_LOOP_41_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -88,7 +88,7 @@ Diagnostics:
     FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS.cpp'
     Replacements:    
       - FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp'
-        Offset:          1062529
+        Offset:          1062641
         Length:          0
         ReplacementText: 'VITIS_LOOP_43_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -97,7 +97,7 @@ Diagnostics:
     FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS.cpp'
     Replacements:    
       - FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp'
-        Offset:          1062577
+        Offset:          1062689
         Length:          0
         ReplacementText: 'VITIS_LOOP_44_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -106,7 +106,7 @@ Diagnostics:
     FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS.cpp'
     Replacements:    
       - FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp'
-        Offset:          1062931
+        Offset:          1063043
         Length:          0
         ReplacementText: 'VITIS_LOOP_56_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -115,7 +115,7 @@ Diagnostics:
     FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS.cpp'
     Replacements:    
       - FilePath:        'D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp'
-        Offset:          1062970
+        Offset:          1063082
         Length:          0
         ReplacementText: 'VITIS_LOOP_57_8: '
 ...

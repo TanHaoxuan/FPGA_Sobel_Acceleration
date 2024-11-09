@@ -3,14 +3,14 @@ import os
 import numpy as np
 from PIL import Image
 
-def csv_to_image(csv_filepath, output_name, output_folder='data' ):
+def csv_to_image(csv_filepath, output_folder, output_name,  skip_lines):
     # Read the CSV file data
     with open(csv_filepath, 'r') as file:
         reader = csv.reader(file)
         # Initialize an empty list to store processed rows
         data = []
         # Skip the first four lines
-        for _ in range(13):
+        for _ in range(skip_lines):
             next(reader, None)
         for row in reader:
             # Filter out empty strings and convert to integers
@@ -41,5 +41,4 @@ def csv_to_image(csv_filepath, output_name, output_folder='data' ):
     else:
         print(f"Image already exists at {output_image_path}, no new image created.")
 
-# Example usage
-csv_to_image('data/output_image.txt', output_name='gtr_fpga', output_folder='data' )
+csv_to_image('data/output_image.txt', output_folder='data',  output_name='gtr_fpga', skip_lines = 9 )

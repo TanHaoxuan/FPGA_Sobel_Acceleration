@@ -11,9 +11,9 @@ use ieee.std_logic_unsigned.all;
 entity sobel_hls_output_RAM_AUTO_1R1W is 
     generic(
         MEM_TYPE        : string    := "auto"; 
-        DataWidth       : integer   := 8; 
-        AddressWidth    : integer   := 12;
-        AddressRange    : integer   := 2500
+        DataWidth       : integer   := 1; 
+        AddressWidth    : integer   := 7;
+        AddressRange    : integer   := 85
     ); 
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0); 

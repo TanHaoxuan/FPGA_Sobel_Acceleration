@@ -29,5 +29,5 @@ def save_image_as_binary(image_path, output_folder, new_size):
     print(f"Binary file saved at: {output_file_path}")
 
 # Example usage
-save_image_as_binary(image_path = 'data/image_gtr_256x256.jpeg', output_folder = 'data', new_size =(50, 50))
+save_image_as_binary(image_path = 'data/image_gtr_256x256.jpeg', output_folder = 'data', new_size =(85, 85))
 

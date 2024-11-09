@@ -24,22 +24,22 @@ D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hl
       VITIS_LOOP_1247_1: 
 D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp:4075:7: note: FIX-IT applied suggested code changes
 D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp:9778:5: warning: Added loop label VITIS_LOOP_32_1:   [xilinx-label-all-loops]
-    for (int i = 0; i < 50; i++) {
+    for (int i = 0; i < 85; i++) {
     ^~~
     VITIS_LOOP_32_1: 
 D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp:9778:5: note: FIX-IT applied suggested code changes
 D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp:9779:9: warning: Added loop label VITIS_LOOP_33_2:   [xilinx-label-all-loops]
-        for (int j = 0; j < 50; j++) {
+        for (int j = 0; j < 85; j++) {
         ^~~
         VITIS_LOOP_33_2: 
 D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp:9779:9: note: FIX-IT applied suggested code changes
 D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp:9786:5: warning: Added loop label VITIS_LOOP_40_3:   [xilinx-label-all-loops]
-    for (int y = 1; y < 50 - 1; y++) {
+    for (int y = 1; y < 85 - 1; y++) {
     ^~~
     VITIS_LOOP_40_3: 
 D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp:9786:5: note: FIX-IT applied suggested code changes
 D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp:9787:9: warning: Added loop label VITIS_LOOP_41_4:   [xilinx-label-all-loops]
-        for (int x = 1; x < 50 - 1; x++) {
+        for (int x = 1; x < 85 - 1; x++) {
         ^~~
         VITIS_LOOP_41_4: 
 D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp:9787:9: note: FIX-IT applied suggested code changes
@@ -54,12 +54,12 @@ D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hl
                 VITIS_LOOP_44_6: 
 D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp:9790:17: note: FIX-IT applied suggested code changes
 D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp:9802:5: warning: Added loop label VITIS_LOOP_56_7:   [xilinx-label-all-loops]
-    for (int i = 0; i < 50; i++) {
+    for (int i = 0; i < 85; i++) {
     ^~~
     VITIS_LOOP_56_7: 
 D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp:9802:5: note: FIX-IT applied suggested code changes
 D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp:9803:9: warning: Added loop label VITIS_LOOP_57_8:   [xilinx-label-all-loops]
-        for (int j = 0; j < 50; j++) {
+        for (int j = 0; j < 85; j++) {
         ^~~
         VITIS_LOOP_57_8: 
 D:\Semester1\CEG5203\workspace\project-fpga\vitis2023\myip_v1_0_HLS\sobel_hls\hls\.autopilot\db\myip_v1_0_HLS.pp.0.cpp:9803:9: note: FIX-IT applied suggested code changes

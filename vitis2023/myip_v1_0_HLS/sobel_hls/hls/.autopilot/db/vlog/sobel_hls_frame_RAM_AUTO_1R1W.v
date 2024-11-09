@@ -13,8 +13,8 @@ module sobel_hls_frame_RAM_AUTO_1R1W (
     reset, clk);
 
 parameter DataWidth = 8;
-parameter AddressWidth = 9;
-parameter AddressRange = 289;
+parameter AddressWidth = 5;
+parameter AddressRange = 29;
  
 input[AddressWidth-1:0] address0;
 input ce0;

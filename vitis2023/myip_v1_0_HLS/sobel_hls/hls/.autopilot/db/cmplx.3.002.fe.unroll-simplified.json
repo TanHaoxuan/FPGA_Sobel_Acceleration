@@ -4,7 +4,7 @@
     "calls": "",
     "file": "myip_v1_0_HLS.cpp",
     "fileloc": 12,
-    "instructions": 147,
+    "instructions": 149,
     "loads": {
       "G": 2,
       "L": 3
@@ -13,6 +13,6 @@
     "stores": {
       "L": 5
     },
-    "total_instructions": 147
+    "total_instructions": 149
   }
 }

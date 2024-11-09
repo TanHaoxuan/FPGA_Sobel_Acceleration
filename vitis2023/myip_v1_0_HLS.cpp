@@ -5,8 +5,8 @@
 typedef ap_axis<32, 0, 0, 0> AXIS_wLAST;
 
 // Define the constants for image dimensions
-#define HEIGHT  50
-#define WIDTH  50
+#define HEIGHT  85
+#define WIDTH  85
 
 // Sobel filter HLS implementation
 void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS) {
@@ -19,8 +19,8 @@ void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS)
     unsigned char frame[HEIGHT][WIDTH];
     unsigned char output[HEIGHT][WIDTH] = {0};
 
-    //#pragma HLS array_partition variable=frame dim=2 complete
-    //#pragma HLS array_partition variable=output dim=2 complete
+    #pragma HLS array_partition variable=frame dim=2 complete
+    #pragma HLS array_partition variable=output dim=2 complete
 
     AXIS_wLAST read_input, write_output;
 
