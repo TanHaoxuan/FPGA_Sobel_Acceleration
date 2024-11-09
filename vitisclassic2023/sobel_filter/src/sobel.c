@@ -127,14 +127,18 @@ int main() {
     /************** Software Sobel Edge Detection ************/
     xil_printf("Start software edge detection...\r\n");
     StartTimer();
-    applySobelFilter_soft(image, soft_output_image, height, width);
+    for (int a=0; a<1000;a++){
+    	applySobelFilter_soft(image, soft_output_image, height, width);
+    }
     u32 time_soft = StopTimer();
     xil_printf("Finished software edge detection in %u clock cycles.\r\n", time_soft);
 
     /************** Hardware Sobel Edge Detection ************/
     xil_printf("Start hardware edge detection...\r\n");
     StartTimer();
-    applySobelFilter_hard(image, hard_output_image, height, width);
+    for (int a=0; a<1000;a++){
+    	applySobelFilter_hard(image, hard_output_image, height, width);
+    }
     u32 time_hard = StopTimer();
     xil_printf("Finished hardware edge detection in %u clock cycles.\r\n", time_hard);
 

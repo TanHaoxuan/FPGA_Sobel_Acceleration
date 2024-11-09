@@ -40,7 +40,7 @@ module AESL_axi_s_S_AXIS (
     reg S_AXIS_TDATA_read_en;
     wire [32 - 1:0] S_AXIS_TDATA_read_data;
     
-    fifo #(2500, 32) fifo_S_AXIS_TDATA (
+    fifo #(7225, 32) fifo_S_AXIS_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(S_AXIS_TDATA_write_en),
@@ -64,7 +64,7 @@ module AESL_axi_s_S_AXIS (
     reg S_AXIS_TKEEP_read_en;
     wire [4 - 1:0] S_AXIS_TKEEP_read_data;
     
-    fifo #(2500, 4) fifo_S_AXIS_TKEEP (
+    fifo #(7225, 4) fifo_S_AXIS_TKEEP (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(S_AXIS_TKEEP_write_en),
@@ -88,7 +88,7 @@ module AESL_axi_s_S_AXIS (
     reg S_AXIS_TSTRB_read_en;
     wire [4 - 1:0] S_AXIS_TSTRB_read_data;
     
-    fifo #(2500, 4) fifo_S_AXIS_TSTRB (
+    fifo #(7225, 4) fifo_S_AXIS_TSTRB (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(S_AXIS_TSTRB_write_en),
@@ -112,7 +112,7 @@ module AESL_axi_s_S_AXIS (
     reg S_AXIS_TLAST_read_en;
     wire [1 - 1:0] S_AXIS_TLAST_read_data;
     
-    fifo #(2500, 1) fifo_S_AXIS_TLAST (
+    fifo #(7225, 1) fifo_S_AXIS_TLAST (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(S_AXIS_TLAST_write_en),

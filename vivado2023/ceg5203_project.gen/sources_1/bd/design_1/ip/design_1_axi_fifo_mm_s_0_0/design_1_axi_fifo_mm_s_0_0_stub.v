@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Fri Nov  8 21:06:30 2024
+// Date        : Fri Nov  8 22:54:07 2024
 // Host        : THX_HP running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               d:/Semester1/CEG5203/workspace/project-fpga/vivado2023/ceg5203_project.gen/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_axi_fifo_mm_s_0_0 -prefix
+//               design_1_axi_fifo_mm_s_0_0_ design_1_axi_fifo_mm_s_0_0_stub.v
 // Design      : design_1_axi_fifo_mm_s_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xck26-sfvc784-2LV-c

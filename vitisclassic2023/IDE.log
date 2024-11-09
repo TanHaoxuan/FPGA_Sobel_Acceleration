@@ -4857,3 +4857,373 @@ con
 
 22:38:21 INFO  : Launch script is exported to file 'D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\sobel_filter_system\_ide\scripts\debugger_sobel_filter-default.tcl'
 22:39:23 INFO  : Disconnected from the channel tcfchan#6.
+01:20:59 DEBUG : Logs will be stored at 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/IDE.log'.
+01:21:00 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\temp_xsdb_launch_script.tcl
+01:21:03 INFO  : XSCT server has started successfully.
+01:21:03 INFO  : Successfully done setting XSCT server connection channel  
+01:21:03 INFO  : plnx-install-location is set to ''
+01:21:03 INFO  : Successfully done setting workspace for the tool. 
+01:21:04 INFO  : Successfully done query RDI_DATADIR 
+01:21:04 INFO  : Platform repository initialization has completed.
+01:21:04 INFO  : Registering command handlers for Vitis TCF services
+01:22:07 INFO  : Hardware specification for platform project 'ceg5203_project' is updated.
+01:23:37 INFO  : Result from executing command 'getProjects': ceg5203_project
+01:23:37 INFO  : Result from executing command 'getPlatforms': ceg5203_project|D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/ceg5203_project.xpfm;xilinx_zcu102_base_202320_1|D:/Program/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|D:/Program/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|D:/Program/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+01:23:38 INFO  : Checking for BSP changes to sync application flags for project 'sobel_filter'...
+01:23:54 INFO  : The hardware specification used by project 'sobel_filter' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+01:23:54 INFO  : The file 'D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\sobel_filter\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+01:23:54 INFO  : The updated bitstream files are copied from platform to folder 'D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\sobel_filter\_ide\bitstream' in project 'sobel_filter'.
+01:23:54 INFO  : The file 'D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\sobel_filter\_ide\psinit\psu_init.tcl' stored in project is removed.
+01:23:55 INFO  : The updated ps init files are copied from platform to folder 'D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\sobel_filter\_ide\psinit' in project 'sobel_filter'.
+01:23:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:23:58 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL13RTM5FNHA' is selected.
+01:23:58 INFO  : 'jtag frequency' command is executed.
+01:23:58 INFO  : Sourcing of 'D:/Program/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+01:23:58 INFO  : Context for 'APU' is selected.
+01:23:59 INFO  : System reset is completed.
+01:24:02 INFO  : 'after 3000' command is executed.
+01:24:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL13RTM5FNHA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL13RTM5FNHA-04724093-0"}' command is executed.
+01:24:07 INFO  : Device configured successfully with "D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/_ide/bitstream/design_1_wrapper.bit"
+01:24:07 INFO  : Context for 'APU' is selected.
+01:24:07 INFO  : Hardware design and registers information is loaded from 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/hw/design_1_wrapper.xsa'.
+01:24:07 INFO  : 'configparams force-mem-access 1' command is executed.
+01:24:07 INFO  : Context for 'APU' is selected.
+01:24:07 INFO  : Boot mode is read from the target.
+01:24:08 INFO  : Boot mode of the target is set to jtag.
+01:24:09 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+01:24:09 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+01:24:09 INFO  : The application 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+01:24:09 INFO  : 'set bp_24_9_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+01:24:10 INFO  : 'con -block -timeout 60' command is executed.
+01:24:10 INFO  : 'bpremove $bp_24_9_fsbl_bp' command is executed.
+01:24:10 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+01:24:10 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+01:24:10 ERROR : Memory write error at 0x0. Cortex-A53 #0: EDITR not ready
+01:24:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Program/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL13RTM5FNHA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL13RTM5FNHA-04724093-0"}
+fpga -file D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+mask_write 0xFF5E0200 0xf000 0
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/boot/fsbl.elf
+set bp_24_9_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_24_9_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/Debug/sobel_filter.elf
+----------------End of Script----------------
+
+01:24:10 ERROR : Memory write error at 0x0. Cortex-A53 #0: EDITR not ready
+01:24:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:24:32 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL13RTM5FNHA' is selected.
+01:24:32 INFO  : 'jtag frequency' command is executed.
+01:24:32 INFO  : Sourcing of 'D:/Program/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+01:24:32 INFO  : Context for 'APU' is selected.
+01:24:32 INFO  : System reset is completed.
+01:24:35 INFO  : 'after 3000' command is executed.
+01:24:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL13RTM5FNHA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL13RTM5FNHA-04724093-0"}' command is executed.
+01:24:39 INFO  : Device configured successfully with "D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/_ide/bitstream/design_1_wrapper.bit"
+01:24:39 INFO  : Context for 'APU' is selected.
+01:24:39 INFO  : Hardware design and registers information is loaded from 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/hw/design_1_wrapper.xsa'.
+01:24:39 INFO  : 'configparams force-mem-access 1' command is executed.
+01:24:39 INFO  : Context for 'APU' is selected.
+01:24:39 INFO  : Boot mode is read from the target.
+01:24:39 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+01:24:40 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+01:24:40 INFO  : The application 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+01:24:40 INFO  : 'set bp_24_40_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+01:24:41 INFO  : 'con -block -timeout 60' command is executed.
+01:24:41 INFO  : 'bpremove $bp_24_40_fsbl_bp' command is executed.
+01:24:41 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+01:24:41 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+01:24:41 INFO  : The application 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/Debug/sobel_filter.elf' is downloaded to processor 'psu_cortexa53_0'.
+01:24:41 INFO  : 'configparams force-mem-access 0' command is executed.
+01:24:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Program/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL13RTM5FNHA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL13RTM5FNHA-04724093-0"}
+fpga -file D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/boot/fsbl.elf
+set bp_24_40_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_24_40_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/Debug/sobel_filter.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:24:42 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+01:24:42 INFO  : 'con' command is executed.
+01:24:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+01:24:42 INFO  : Launch script is exported to file 'D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\sobel_filter_system\_ide\scripts\debugger_sobel_filter-default.tcl'
+01:28:46 INFO  : Disconnected from the channel tcfchan#2.
+11:42:24 DEBUG : Logs will be stored at 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/IDE.log'.
+11:42:24 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\temp_xsdb_launch_script.tcl
+11:42:27 INFO  : XSCT server has started successfully.
+11:42:27 INFO  : plnx-install-location is set to ''
+11:42:27 INFO  : Successfully done setting XSCT server connection channel  
+11:42:27 INFO  : Successfully done setting workspace for the tool. 
+11:42:28 INFO  : Registering command handlers for Vitis TCF services
+11:42:28 INFO  : Successfully done query RDI_DATADIR 
+11:42:28 INFO  : Platform repository initialization has completed.
+11:43:37 INFO  : Hardware specification for platform project 'ceg5203_project' is updated.
+11:44:37 INFO  : Result from executing command 'getProjects': ceg5203_project
+11:44:37 INFO  : Result from executing command 'getPlatforms': ceg5203_project|D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/ceg5203_project.xpfm;xilinx_zcu102_base_202320_1|D:/Program/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|D:/Program/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|D:/Program/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+11:44:38 INFO  : Checking for BSP changes to sync application flags for project 'sobel_filter'...
+11:44:47 INFO  : The hardware specification used by project 'sobel_filter' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+11:44:47 INFO  : The file 'D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\sobel_filter\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+11:44:47 INFO  : The updated bitstream files are copied from platform to folder 'D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\sobel_filter\_ide\bitstream' in project 'sobel_filter'.
+11:44:47 INFO  : The file 'D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\sobel_filter\_ide\psinit\psu_init.tcl' stored in project is removed.
+11:44:47 INFO  : The updated ps init files are copied from platform to folder 'D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\sobel_filter\_ide\psinit' in project 'sobel_filter'.
+11:44:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:44:51 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL13RTM5FNHA' is selected.
+11:44:51 INFO  : 'jtag frequency' command is executed.
+11:44:51 INFO  : Sourcing of 'D:/Program/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:44:52 INFO  : Context for 'APU' is selected.
+11:44:52 INFO  : System reset is completed.
+11:44:55 INFO  : 'after 3000' command is executed.
+11:44:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL13RTM5FNHA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL13RTM5FNHA-04724093-0"}' command is executed.
+11:45:00 INFO  : Device configured successfully with "D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/_ide/bitstream/design_1_wrapper.bit"
+11:45:00 INFO  : Context for 'APU' is selected.
+11:45:00 INFO  : Hardware design and registers information is loaded from 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/hw/design_1_wrapper.xsa'.
+11:45:00 INFO  : 'configparams force-mem-access 1' command is executed.
+11:45:00 INFO  : Context for 'APU' is selected.
+11:45:00 INFO  : Boot mode is read from the target.
+11:45:04 INFO  : Boot mode of the target is set to jtag.
+11:45:04 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:45:04 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:45:05 INFO  : The application 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:45:05 INFO  : 'set bp_45_5_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:45:06 INFO  : 'con -block -timeout 60' command is executed.
+11:45:06 INFO  : 'bpremove $bp_45_5_fsbl_bp' command is executed.
+11:45:06 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:45:06 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:45:06 ERROR : Memory write error at 0x0. Cortex-A53 #0: EDITR not ready
+11:45:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Program/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL13RTM5FNHA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL13RTM5FNHA-04724093-0"}
+fpga -file D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+mask_write 0xFF5E0200 0xf000 0
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/boot/fsbl.elf
+set bp_45_5_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_45_5_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/Debug/sobel_filter.elf
+----------------End of Script----------------
+
+11:45:06 ERROR : Memory write error at 0x0. Cortex-A53 #0: EDITR not ready
+11:45:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:45:28 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL13RTM5FNHA' is selected.
+11:45:28 INFO  : 'jtag frequency' command is executed.
+11:45:28 INFO  : Sourcing of 'D:/Program/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:45:28 INFO  : Context for 'APU' is selected.
+11:45:28 INFO  : System reset is completed.
+11:45:31 INFO  : 'after 3000' command is executed.
+11:45:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL13RTM5FNHA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL13RTM5FNHA-04724093-0"}' command is executed.
+11:45:35 INFO  : Device configured successfully with "D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/_ide/bitstream/design_1_wrapper.bit"
+11:45:35 INFO  : Context for 'APU' is selected.
+11:45:36 INFO  : Hardware design and registers information is loaded from 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/hw/design_1_wrapper.xsa'.
+11:45:36 INFO  : 'configparams force-mem-access 1' command is executed.
+11:45:36 INFO  : Context for 'APU' is selected.
+11:45:36 INFO  : Boot mode is read from the target.
+11:45:36 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:45:36 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:45:36 INFO  : The application 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:45:36 INFO  : 'set bp_45_36_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:45:37 INFO  : 'con -block -timeout 60' command is executed.
+11:45:37 INFO  : 'bpremove $bp_45_36_fsbl_bp' command is executed.
+11:45:37 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:45:37 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:45:38 INFO  : The application 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/Debug/sobel_filter.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:45:38 INFO  : 'configparams force-mem-access 0' command is executed.
+11:45:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Program/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL13RTM5FNHA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL13RTM5FNHA-04724093-0"}
+fpga -file D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/boot/fsbl.elf
+set bp_45_36_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_45_36_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/Debug/sobel_filter.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:45:38 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:45:38 INFO  : 'con' command is executed.
+11:45:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+11:45:38 INFO  : Launch script is exported to file 'D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\sobel_filter_system\_ide\scripts\debugger_sobel_filter-default.tcl'
+11:47:54 INFO  : Disconnected from the channel tcfchan#2.
+11:51:16 INFO  : Checking for BSP changes to sync application flags for project 'sobel_filter'...
+11:53:29 INFO  : Checking for BSP changes to sync application flags for project 'sobel_filter'...
+11:53:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:53:37 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL13RTM5FNHA' is selected.
+11:53:37 INFO  : 'jtag frequency' command is executed.
+11:53:37 INFO  : Sourcing of 'D:/Program/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:53:37 INFO  : Context for 'APU' is selected.
+11:53:37 INFO  : System reset is completed.
+11:53:40 INFO  : 'after 3000' command is executed.
+11:53:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL13RTM5FNHA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL13RTM5FNHA-04724093-0"}' command is executed.
+11:53:45 INFO  : Device configured successfully with "D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/_ide/bitstream/design_1_wrapper.bit"
+11:53:45 INFO  : Context for 'APU' is selected.
+11:53:45 INFO  : Hardware design and registers information is loaded from 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/hw/design_1_wrapper.xsa'.
+11:53:45 INFO  : 'configparams force-mem-access 1' command is executed.
+11:53:45 INFO  : Context for 'APU' is selected.
+11:53:45 INFO  : Boot mode is read from the target.
+11:53:45 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:53:45 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:53:46 INFO  : The application 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:53:46 INFO  : 'set bp_53_46_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:53:46 INFO  : 'con -block -timeout 60' command is executed.
+11:53:46 INFO  : 'bpremove $bp_53_46_fsbl_bp' command is executed.
+11:53:46 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:53:46 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:53:46 INFO  : The application 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/Debug/sobel_filter.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:53:46 INFO  : 'configparams force-mem-access 0' command is executed.
+11:53:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Program/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL13RTM5FNHA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL13RTM5FNHA-04724093-0"}
+fpga -file D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/boot/fsbl.elf
+set bp_53_46_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_53_46_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/Debug/sobel_filter.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:53:47 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:53:47 INFO  : 'con' command is executed.
+11:53:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+11:53:47 INFO  : Launch script is exported to file 'D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\sobel_filter_system\_ide\scripts\debugger_sobel_filter-default.tcl'
+11:54:23 INFO  : Disconnected from the channel tcfchan#3.
+11:54:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:54:41 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL13RTM5FNHA' is selected.
+11:54:41 INFO  : 'jtag frequency' command is executed.
+11:54:41 INFO  : Sourcing of 'D:/Program/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+11:54:41 INFO  : Context for 'APU' is selected.
+11:54:41 INFO  : System reset is completed.
+11:54:44 INFO  : 'after 3000' command is executed.
+11:54:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL13RTM5FNHA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL13RTM5FNHA-04724093-0"}' command is executed.
+11:54:49 INFO  : Device configured successfully with "D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/_ide/bitstream/design_1_wrapper.bit"
+11:54:49 INFO  : Context for 'APU' is selected.
+11:54:49 INFO  : Hardware design and registers information is loaded from 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/hw/design_1_wrapper.xsa'.
+11:54:49 INFO  : 'configparams force-mem-access 1' command is executed.
+11:54:49 INFO  : Context for 'APU' is selected.
+11:54:49 INFO  : Boot mode is read from the target.
+11:54:49 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:54:50 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:54:50 INFO  : The application 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:54:50 INFO  : 'set bp_54_50_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+11:54:51 INFO  : 'con -block -timeout 60' command is executed.
+11:54:51 INFO  : 'bpremove $bp_54_50_fsbl_bp' command is executed.
+11:54:51 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:54:51 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:54:52 INFO  : The application 'D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/Debug/sobel_filter.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:54:52 INFO  : 'configparams force-mem-access 0' command is executed.
+11:54:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Program/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL13RTM5FNHA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL13RTM5FNHA-04724093-0"}
+fpga -file D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/hw/design_1_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/boot/fsbl.elf
+set bp_54_50_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_54_50_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/Debug/sobel_filter.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:54:52 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:54:52 INFO  : 'con' command is executed.
+11:54:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+11:54:52 INFO  : Launch script is exported to file 'D:\Semester1\CEG5203\workspace\project-fpga\vitisclassic2023\sobel_filter_system\_ide\scripts\debugger_sobel_filter-default.tcl'
+11:57:09 INFO  : Disconnected from the channel tcfchan#4.

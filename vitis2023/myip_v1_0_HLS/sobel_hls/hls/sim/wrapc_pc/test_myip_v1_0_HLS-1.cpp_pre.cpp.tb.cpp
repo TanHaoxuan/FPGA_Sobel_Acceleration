@@ -78249,12 +78249,12 @@ void apatb_sobel_hls_sw(hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 
 # 11 "D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/test_myip_v1_0_HLS-1.cpp"
 void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS);
 
-void compute_sobel_software(const unsigned char input[50][50], unsigned char output[50][50]) {
+void compute_sobel_software(const unsigned char input[85][85], unsigned char output[85][85]) {
     int Gx[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
     int Gy[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
 
-    for (int y = 1; y < 50 - 1; y++) {
-        for (int x = 1; x < 50 - 1; x++) {
+    for (int y = 1; y < 85 - 1; y++) {
+        for (int x = 1; x < 85 - 1; x++) {
             int px = 0, py = 0;
             for (int i = -1; i <= 1; i++) {
                 for (int j = -1; j <= 1; j++) {
@@ -78277,13 +78277,13 @@ int main() {
     hls::stream<AXIS_wLAST> S_AXIS;
     hls::stream<AXIS_wLAST> M_AXIS;
 
-    unsigned char test_image[50][50];
-    unsigned char result_image[50][50] = {0};
-    unsigned char expected_output[50][50] = {0};
+    unsigned char test_image[85][85];
+    unsigned char result_image[85][85] = {0};
+    unsigned char expected_output[85][85] = {0};
 
 
-    for (int i = 0; i < 50; i++) {
-        for (int j = 0; j < 50; j++) {
+    for (int i = 0; i < 85; i++) {
+        for (int j = 0; j < 85; j++) {
             test_image[i][j] = (i * j) % 250;
         }
     }
@@ -78293,10 +78293,10 @@ int main() {
 
 
     printf("Transmitting Image...\n");
-    for (int i = 0; i < 50; i++) {
-        for (int j = 0; j < 50; j++) {
+    for (int i = 0; i < 85; i++) {
+        for (int j = 0; j < 85; j++) {
             write_input.data = test_image[i][j];
-            write_input.last = (i == 50 - 1) && (j == 50 - 1);
+            write_input.last = (i == 85 - 1) && (j == 85 - 1);
             S_AXIS.write(write_input);
         }
     }
@@ -78314,8 +78314,8 @@ sobel_hls(S_AXIS, M_AXIS);
 
 
     printf("Receiving Image...\n");
-    for (int i = 0; i < 50; i++) {
-        for (int j = 0; j < 50; j++) {
+    for (int i = 0; i < 85; i++) {
+        for (int j = 0; j < 85; j++) {
             read_output = M_AXIS.read();
             result_image[i][j] = read_output.data;
         }
@@ -78323,8 +78323,8 @@ sobel_hls(S_AXIS, M_AXIS);
 
 
     printf("Checking results...\n");
-    for (int i = 0; i < 50; i++) {
-        for (int j = 0; j < 50; j++) {
+    for (int i = 0; i < 85; i++) {
+        for (int j = 0; j < 85; j++) {
             if (result_image[i][j] != expected_output[i][j]) {
                 printf("Error: Pixel (%d, %d) - Expected %d, Got %d\n", i, j, expected_output[i][j], result_image[i][j]);
                 success = 0;

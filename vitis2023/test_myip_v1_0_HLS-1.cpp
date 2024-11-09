@@ -5,8 +5,8 @@
 
 typedef ap_axis<32, 0, 0, 0> AXIS_wLAST;
 
-#define HEIGHT 50
-#define WIDTH 50
+#define HEIGHT 85
+#define WIDTH 85
 
 void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS);
 

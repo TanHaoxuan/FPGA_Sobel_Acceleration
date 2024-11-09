@@ -1,4 +1,4 @@
-INFO: [vitis-run 60-1548] Creating build summary session with primary output D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls\sobel_hls.hlsrun_csim_summary, at 11/08/24 22:14:00
+INFO: [vitis-run 60-1548] Creating build summary session with primary output D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls\sobel_hls.hlsrun_csim_summary, at 11/09/24 10:49:36
 INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls -config D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg -cmdlineconfig D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/config.cmdline
 ECHO 处于关闭状态。
 ECHO 处于关闭状态。
@@ -12,7 +12,7 @@ ECHO 处于关闭状态。
 
 source D:/Program/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running 'D:/Program/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user '96160' on host 'thx_hp' (Windows NT_amd64 version 6.2) on Fri Nov 08 22:14:02 +0800 2024
+INFO: [HLS 200-10] For user '96160' on host 'thx_hp' (Windows NT_amd64 version 6.2) on Sat Nov 09 10:49:39 +0800 2024
 INFO: [HLS 200-10] In directory 'D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS'
 INFO: [HLS 200-1909] Reading HLS ini file D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/hls_config.cfg
 INFO: [HLS 200-1909] Reading HLS ini file D:/Semester1/CEG5203/workspace/project-fpga/vitis2023/myip_v1_0_HLS/sobel_hls/hls/config.cmdline
@@ -93,11 +93,11 @@ Transmitting Image...
 Receiving Image...
 Checking results...
 Test Passed
-INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 2500
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 7225
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.645 seconds; current allocated memory: 1.043 MB.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.772 seconds; current allocated memory: 0.824 MB.
 INFO: [HLS 200-1510] Running: close_project 
-INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 7.014 seconds; peak allocated memory: 89.277 MB.
-INFO: [Common 17-206] Exiting vitis_hls at Fri Nov  8 22:14:09 2024...
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.152 seconds; peak allocated memory: 89.613 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Sat Nov  9 10:49:45 2024...
 INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 11s
