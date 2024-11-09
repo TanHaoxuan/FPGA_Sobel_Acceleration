@@ -1239,22 +1239,22 @@
             "value": "1"
           },
           "C_RX_FIFO_DEPTH": {
-            "value": "16384"
+            "value": "32768"
           },
           "C_RX_FIFO_PE_THRESHOLD": {
             "value": "5"
           },
           "C_RX_FIFO_PF_THRESHOLD": {
-            "value": "16379"
+            "value": "32000"
           },
           "C_TX_FIFO_DEPTH": {
-            "value": "16384"
+            "value": "32768"
           },
           "C_TX_FIFO_PE_THRESHOLD": {
             "value": "5"
           },
           "C_TX_FIFO_PF_THRESHOLD": {
-            "value": "16379"
+            "value": "32000"
           },
           "C_USE_TX_CTRL": {
             "value": "0"
@@ -1816,7 +1816,7 @@
       },
       "sobel_hls_0": {
         "vlnv": "xilinx.com:hls:sobel_hls:1.0",
-        "ip_revision": "2113814177",
+        "ip_revision": "2113814963",
         "xci_name": "design_1_sobel_hls_0_0",
         "xci_path": "ip\\design_1_sobel_hls_0_0\\design_1_sobel_hls_0_0.xci",
         "inst_hier_path": "sobel_hls_0"

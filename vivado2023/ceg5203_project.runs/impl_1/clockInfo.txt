@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Fri Nov  8 22:23:29 2024
+| Date         : Sat Nov  9 11:30:21 2024
 | Host         : THX_HP
 | Design       : design_1
 | Device       : xck26-sfvc784-2LV-C-
