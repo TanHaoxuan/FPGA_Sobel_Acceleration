@@ -11,7 +11,9 @@ data/*.txt
 *.sim/
 *.srcs/
 *.xpr
-
+compile_simlib/
+vivado2023/*cache/
+wt/
 # Ignore backup and log files
 *.log
 *.jou

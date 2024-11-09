@@ -1,7 +1,0 @@
-Running: xsim.dir/sobel_hls/xsimk.exe -simmode gui -wdb sobel_hls.wdb -simrunnum 0 -socket 55177
-Design successfully loaded
-Design Loading Memory Usage: 14068 KB (Peak: 14068 KB)
-Design Loading CPU Usage: 31 ms
-Simulation completed
-Simulation Memory Usage: 20908 KB (Peak: 20908 KB)
-Simulation CPU Usage: 1875 ms
