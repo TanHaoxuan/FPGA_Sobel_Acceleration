@@ -41,4 +41,4 @@ def csv_to_image(csv_filepath, output_folder, output_name,  skip_lines):
     else:
         print(f"Image already exists at {output_image_path}, no new image created.")
 
-csv_to_image('data/output_image.txt', output_folder='data',  output_name='gtr_fpga', skip_lines = 9 )
+csv_to_image('data/output_image.txt', output_folder='data',  output_name='gtr_fpga', skip_lines = 8 )

@@ -1,5 +1,4 @@
 data/
-data/*.txt
 
 # Ignore Vivado and Vitis folders
 *.Xil/
@@ -14,15 +13,25 @@ data/*.txt
 compile_simlib/
 vivado2023/*cache/
 wt/
-# Ignore backup and log files
-*.log
-*.jou
-*.backup.log
+
+# Ignore project-specific build artifacts in Vitis Classic
+ceg5203_project/
+sobel_filter_system/
+.analytics
 
 # Ignore project-specific build artifacts in Vitis
 *.theia/
 logs/
 *.lock
+myip_v1_0_HLS/
+.peers.ini
+.repo.yaml
+
+
+# Ignore backup and log files
+*.log
+*.jou
+*.backup.log
 
 # Ignore compiled object files
 *.o

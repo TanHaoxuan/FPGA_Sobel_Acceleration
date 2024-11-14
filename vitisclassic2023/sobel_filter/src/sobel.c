@@ -127,7 +127,7 @@ int main() {
     /************** Software Sobel Edge Detection ************/
     xil_printf("Start software edge detection...\r\n");
     StartTimer();
-    for (int a=0; a<1000;a++){
+    for (int a=0; a<500;a++){
     	applySobelFilter_soft(image, soft_output_image, height, width);
     }
     u32 time_soft = StopTimer();
@@ -136,7 +136,7 @@ int main() {
     /************** Hardware Sobel Edge Detection ************/
     xil_printf("Start hardware edge detection...\r\n");
     StartTimer();
-    for (int a=0; a<1000;a++){
+    for (int a=0; a<500;a++){
     	applySobelFilter_hard(image, hard_output_image, height, width);
     }
     u32 time_hard = StopTimer();
@@ -320,7 +320,7 @@ void applySobelFilter_hard(unsigned char **input, unsigned char **output, unsign
 
 	// Ensure the FIFO is clear before writing
     XLlFifo_IntClear(InstancePtr, 0xFFFFFFFF);
-    xil_printf("Transmitting Image ... \r\n");
+    //xil_printf("Transmitting Image ... \r\n");
 
     // Transmit data
     for (int i = 0; i < height; i++) {
@@ -348,7 +348,7 @@ void applySobelFilter_hard(unsigned char **input, unsigned char **output, unsign
             break; // Or handle the error as appropriate
         }
     }
-    xil_printf("Transmission Complete.\r\n");
+    //xil_printf("Transmission Complete.\r\n");
 
 
     // Receive data

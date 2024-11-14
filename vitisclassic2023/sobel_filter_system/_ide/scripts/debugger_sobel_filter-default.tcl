@@ -24,9 +24,9 @@ set mode [expr [mrd -value 0xFF5E0200] & 0xf]
 targets -set -nocase -filter {name =~ "*A53*#0"}
 rst -processor
 dow D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/ceg5203_project/export/ceg5203_project/sw/ceg5203_project/boot/fsbl.elf
-set bp_54_50_fsbl_bp [bpadd -addr &XFsbl_Exit]
+set bp_12_42_fsbl_bp [bpadd -addr &XFsbl_Exit]
 con -block -timeout 60
-bpremove $bp_54_50_fsbl_bp
+bpremove $bp_12_42_fsbl_bp
 targets -set -nocase -filter {name =~ "*A53*#0"}
 rst -processor
 dow D:/Semester1/CEG5203/workspace/project-fpga/vitisclassic2023/sobel_filter/Debug/sobel_filter.elf

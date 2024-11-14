@@ -19,8 +19,8 @@ void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS)
     unsigned char frame[HEIGHT][WIDTH];
     unsigned char output[HEIGHT][WIDTH] = {0};
 
-    #pragma HLS array_partition variable=frame dim=2 complete
-    #pragma HLS array_partition variable=output dim=2 complete
+#pragma HLS array_partition variable=frame dim=2 complete
+#pragma HLS array_partition variable=output dim=2 complete
 
     AXIS_wLAST read_input, write_output;
 
@@ -36,12 +36,15 @@ void sobel_hls(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS)
         }
     }
 
+#pragma HLS DATAFLOW
     // Apply the Sobel filter to each pixel
     for (int y = 1; y < HEIGHT - 1; y++) {
         for (int x = 1; x < WIDTH - 1; x++) {
+#pragma HLS PIPELINE
             int px = 0, py = 0;
             for (int i = -1; i <= 1; i++) {
                 for (int j = -1; j <= 1; j++) {
+#pragma HLS UNROLL
                     px += frame[y + i][x + j] * Gx[i + 1][j + 1];
                     py += frame[y + i][x + j] * Gy[i + 1][j + 1];
                 }
